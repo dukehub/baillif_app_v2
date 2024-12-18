@@ -1,0 +1,129 @@
+
+* {
+	font: 11pt "Cairo";
+	
+}
+QLineEdit {
+    text-align: right; /* Aligne le texte à droite */
+	
+     /* Définit la direction droite à gauche */
+}
+
+
+/* Appliquer RTL à tous les QTextEdit */
+QTextEdit {
+    text-align: right; /* Aligne le texte à droite */
+    /* Définit la direction droite à gauche */
+}
+QTableView {
+    font-size: 11px;
+}
+
+/*= Style Page Client
+  ==================================================== */
+	#page_clients #pb_add {
+		text-align: center;	
+		background-color:  rgb(60, 146, 92);
+		color: rgb(255, 255, 255);
+	}
+	#page_clients #pb_add:hover {
+		background-color: #49b270;
+		color: #9dead1;
+	}
+	#page_clients QLineEdit {
+		text-align: right; /* Aligne le texte à droite */
+		height: 32px;
+		/* Définit la direction droite à gauche */
+	}
+	
+
+	
+/*= END
+  ==================================================== */
+
+/*= Style for button to change menu style START
+  ==================================================== */
+	#change_btn {
+		padding: 5px;
+		border: none;
+		width: 30px;
+		height: 30px;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for header widget START
+  ==================================================== */
+	#widget {
+		background-color: #DFE2E7;
+	}
+/*= END
+ 
+
+/*= Style for menu with icon and text START
+  ==================================================== */
+	/* style for widget */
+	#widget_full_menu {
+		background-color: #1a2e05;
+	}
+
+	/* style for QPushButton */
+	#widget_full_menu QPushButton {
+		border:none;
+		
+		text-align: left;
+		padding: 10px 0 10px 20px;
+		color: #DFE2E7;
+	}
+
+	#widget_full_menu QPushButton:hover {
+		background-color: #DFE2E7;
+		color: #1a2e05;
+		font-weight: bold;
+		
+	}
+
+	#widget_full_menu QPushButton:checked {
+		background-color: #DFE2E7;
+		color: #1a2e05;
+		font-weight: bold;
+	}
+	
+    #frame_repports QPushButton, #frame_clients QPushButton{
+		padding-left: 40px;
+	}	/* style for logo image */
+	#lbl_logo {
+		padding: 5px;
+		color: #fff;
+	}
+
+	/* style for APP title */
+	#lbl_logo{
+		padding-right: 10px;
+		color: #fff;
+	}
+	#pb_home::off{
+		qproperty-icon: url(':/icons/icons/ceramic_tiles.svg');
+		
+	}
+	#pb_home::on{
+		qproperty-icon: url(':/icons/icons/green_ceramic_tiles.svg');
+		
+	}
+/*= END
+  ==================================================== */
+
+/* =================================================== */
+/* Validators
+/* =================================================== */
+
+
+
+ QToolTip {
+        background-color: #FFCCCC; /* Rouge clair */
+        color: #B00000; /* Texte rouge foncé */
+        border: 1px solid #B00000; /* Bordure rouge */
+        padding: 5px;
+        border-radius: 4px;
+    }
+
