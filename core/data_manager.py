@@ -3,12 +3,12 @@ from core.data_services import (ClientServices, DocumentServices, SectionService
                                     RoomServices, TribunalServices, DefendeurServices, DossierServices, FieldValueServices,
                                     CategoryServices, BailiffServices, ArchiveBoxServices)
 from core.db import Session
-from core import state_manager
+from core.state_manager import StateManager
 
 class DataManager(QObject):
     def __init__(self):
         super().__init__()
-        self.state_manager = state_manager
+        self.state_manager = StateManager()
         # Initialize initial states
         self.state_manager.set_state("clients", self.get_all_clients())
         self.state_manager.set_state("dossiers", self.get_all_dossiers())

@@ -1,5 +1,5 @@
 import os
-from config import archive_dir, templates_dir, logs_dir
+from helpers.config import archive_dir, templates_dir, logs_dir
 from helpers.logger import logger
 from core.db import init_db
 

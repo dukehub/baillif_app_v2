@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from PySide6.QtCore import QSettings
+from sqlalchemy.ext.declarative import declarative_base
 # revinir au repertoire parent
 
 basedir = Path(__file__).parent.parent
@@ -13,6 +14,8 @@ logs_dir = os.path.join(basedir, "logs")
 for directory in [archive_dir, logs_dir]:
     if not os.path.exists(directory):
         os.makedirs(directory)
+        
+Base = declarative_base()
 DB_CONFIG_DEV = {
     'url': f'sqlite:///{os.path.join(basedir, "db_dev.db")}?charset=utf8',
     'echo': False

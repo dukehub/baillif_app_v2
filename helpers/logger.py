@@ -1,7 +1,7 @@
 import logging
 import os
 from logging.handlers import RotatingFileHandler
-from config import basedir
+from helpers.config import basedir
 
 # Création du dossier logs s'il n'existe pas
 logs_dir = os.path.join(basedir, 'logs')

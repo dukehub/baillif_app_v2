@@ -2,8 +2,10 @@ from pickle import FALSE
 from sqlalchemy import Column, Integer, CheckConstraint, ForeignKey, String, Boolean, Float, DateTime, Text, Enum, Numeric
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from core.base import Base
+from helpers.config import Base
+
 import enum, json
+
 
 # Enums
 class RapportType(enum.Enum):
