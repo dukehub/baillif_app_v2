@@ -74,3 +74,5 @@ class StateManager(QObject):
                 self._state[key].update(value)
                 self.state_changed.emit(key, self._state[key])
                 self._notify_subscribers(key, self._state[key])
+
+
