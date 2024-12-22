@@ -32,7 +32,7 @@ QTableView {
 	}
 	#page_clients QLineEdit {
 		text-align: right; /* Aligne le texte à droite */
-		height: 32px;
+	
 		/* Définit la direction droite à gauche */
 	}
 	

@@ -9,11 +9,14 @@ from helpers import logger
 
 
 class DataManager(QObject):
-    def __init__(self):
+    def __init__(self, state_manager=None):
         super().__init__()
         self.state_manager = state_manager
-        # Initialize initial states
-      
+        
+
+    def set_state_manager(self, state_manager):
+        self.state_manager = state_manager
+    
 
     def _with_session(self, service_method, *args, **kwargs):
         session = Session()

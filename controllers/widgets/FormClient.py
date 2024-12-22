@@ -113,17 +113,7 @@ class FormClientController(QObject):
         self.state_manager = state_manager
         self.data_manager = data_manager
 
-    def load_legal_status(self):
-        """Charge les types de clients depuis GenreEnum dans la combobox"""
-        parent = self.parent()
-        if parent and hasattr(parent, 'ui'):
-            combo = parent.ui.cb_legal_status
-            combo.clear()
-            combo.addItem("")  # Option vide par défaut
-            
-            # Ajoute chaque type depuis l'énumération
-            for genre in GenreEnum:
-                combo.addItem(genre.value)  # On utilise .value pour obtenir la chaîne en arabe
+   
 
     def on_save_clicked(self):
         pass
