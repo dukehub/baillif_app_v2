@@ -2,27 +2,21 @@ from PySide6.QtCore import QObject
 from core.data_services import (ClientServices, DocumentServices, SectionServices, CouncilServices, DemandeurServices,
                                     RoomServices, TribunalServices, DefendeurServices, DossierServices, FieldValueServices,
                                     CategoryServices, BailiffServices, ArchiveBoxServices)
-from core.db import Session
-from core.state_manager import StateManager
+from .db import Session
+from core import state_manager
+from helpers import logger
+
+
 
 class DataManager(QObject):
-    def __init__(self):
+    def __init__(self, state_manager=None):
         super().__init__()
-        self.state_manager = StateManager()
-        # Initialize initial states
-        self.state_manager.set_state("clients", self.get_all_clients())
-        self.state_manager.set_state("dossiers", self.get_all_dossiers())
+        self.state_manager = state_manager
         
-        self.state_manager.set_state("demandeurs", self.get_all_demandeurs())
-        self.state_manager.set_state("defendeurs", self.get_all_defendeurs())
-        self.state_manager.set_state("sections", self.get_all_sections())
-        self.state_manager.set_state("tribunals", self.get_all_tribunals())
-        self.state_manager.set_state("rooms", self.get_all_rooms())
-        self.state_manager.set_state("councils", self.get_all_councils())
-        self.state_manager.set_state("documents", self.get_all_documents())
-        self.state_manager.set_state("categories", self.get_all_documents())
-        self.state_manager.set_state("bailiffs", self.get_bailiff())
-        self.state_manager.set_state("archive_boxes", self.get_all_archive_boxes())
+
+    def set_state_manager(self, state_manager):
+        self.state_manager = state_manager
+    
 
     def _with_session(self, service_method, *args, **kwargs):
         session = Session()
@@ -31,6 +25,7 @@ class DataManager(QObject):
             return result
         except Exception as e:
             session.rollback()
+
             print(f"Erreur dans {service_method.__name__}: {e}")
             return None
         finally:

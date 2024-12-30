@@ -23,8 +23,23 @@ class GenreEnum(enum.Enum):
     AVOCAT = "محامي"
     HUISSIER = "محضر"
     EXPERT = "خبير"
-    ORGANISME =  "هيئة عمومية"
+    PUBLIC = "هيئة عمومية"
     OTHER = "اخرى"
+
+    @classmethod
+    def from_arabic(cls, value):
+        """Convertit une valeur arabe en énumération"""
+        try:
+            return next(genre for genre in cls if genre.value == value)
+        except StopIteration:
+            return None
+
+    def to_arabic(self):
+        """Retourne la valeur arabe de l'énumération"""
+        return self.value
+
+    def __str__(self):
+        return self.value
 
 # Tables
 class Demandeur(Base):
@@ -161,7 +176,7 @@ class Client(Base):
     __tablename__ = "clients"
     id = Column(Integer, primary_key=True, index=True)
     nom = Column(String, nullable=False, index=True)
-    genre = Column(Enum(GenreEnum), nullable=False)
+    genre = Column(String, nullable=False)
     adresse = Column(String)
     phone = Column(String)
     mobile = Column(String)
@@ -170,6 +185,19 @@ class Client(Base):
     date_creation = Column(DateTime, server_default=func.now())
     dossiers = relationship("Dossier", back_populates="client")
     factures = relationship("Facture", back_populates="client")
+
+    @property
+    def genre_enum(self):
+        """Convertit la valeur string en énumération"""
+        return GenreEnum.from_arabic(self.genre)
+
+    @genre_enum.setter
+    def genre_enum(self, value):
+        """Convertit l'énumération en string"""
+        if isinstance(value, GenreEnum):
+            self.genre = value.value
+        else:
+            self.genre = value
 
 class User(Base):
     __tablename__ = "users"

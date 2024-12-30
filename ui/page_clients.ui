@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>1433</width>
     <height>871</height>
+=======
+    <width>1121</width>
+    <height>682</height>
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,15 +48,63 @@
         <property name="frameShape">
          <enum>QFrame::Shape::StyledPanel</enum>
         </property>
+<<<<<<< HEAD
         <property name="frameShadow">
          <enum>QFrame::Shadow::Raised</enum>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
+=======
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QWidget" name="widget_header" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>بحث</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="le_find">
+              <property name="placeholderText">
+               <string/>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
           <widget class="QSplitter" name="splitter">
            <property name="orientation">
             <enum>Qt::Orientation::Horizontal</enum>
            </property>
+<<<<<<< HEAD
            <widget class="QFrame" name="frame_6">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -140,6 +193,12 @@
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
+=======
+           <widget class="QWidget" name="">
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QTableView" name="tableView_client">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                <property name="editTriggers">
                 <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
                </property>
@@ -157,6 +216,7 @@
                </property>
               </widget>
              </item>
+<<<<<<< HEAD
             </layout>
            </widget>
            <widget class="QTabWidget" name="tabWidget">
@@ -166,16 +226,180 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+=======
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="text">
+                   <string>PushButton</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QTabWidget" name="tabWidget">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
             <property name="currentIndex">
              <number>0</number>
             </property>
             <widget class="QWidget" name="tab_client">
              <attribute name="title">
+<<<<<<< HEAD
               <string>معلومات العميل</string>
              </attribute>
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
                <widget class="QFrame" name="frame_3">
+=======
+              <string>معلومات</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="frame_3">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <widget class="QPushButton" name="pb_add">
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>300</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>إضافة عميل</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="ui.resources.qrc">
+                     <normaloff>:/icons/icons/add_white.svg</normaloff>:/icons/icons/add_white.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>16</width>
+                     <height>16</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pb_save">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="ui.resources.qrc">
+                     <normaloff>:/icons/icons/save.png</normaloff>:/icons/icons/save.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="autoDefault">
+                    <bool>true</bool>
+                   </property>
+                   <property name="flat">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pb_edit">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="ui.resources.qrc">
+                     <normaloff>:/icons/icons/edit.svg</normaloff>:/icons/icons/edit.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="flat">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pb_delete">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="ui.resources.qrc">
+                     <normaloff>:/icons/icons/trash.svg</normaloff>:/icons/icons/trash.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="autoDefault">
+                    <bool>true</bool>
+                   </property>
+                   <property name="flat">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_2">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -188,6 +412,7 @@
                   <height>0</height>
                  </size>
                 </property>
+<<<<<<< HEAD
                 <property name="frameShape">
                  <enum>QFrame::Shape::StyledPanel</enum>
                 </property>
@@ -213,13 +438,36 @@
                   </layout>
                  </item>
                  <item row="9" column="1">
+=======
+                <property name="maximumSize">
+                 <size>
+                  <width>720</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>معلومات العميل</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>العنوان</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                   <layout class="QHBoxLayout" name="horizontalLayout_7">
                    <property name="spacing">
                     <number>0</number>
                    </property>
+<<<<<<< HEAD
                    <property name="sizeConstraint">
                     <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
                    </property>
+=======
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                    <item>
                     <widget class="QLabel" name="error_mobile">
                      <property name="text">
@@ -239,12 +487,18 @@
                    </item>
                   </layout>
                  </item>
+<<<<<<< HEAD
                  <item row="13" column="1">
                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+=======
+                 <item row="0" column="1" colspan="2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                    <property name="spacing">
                     <number>0</number>
                    </property>
                    <item>
+<<<<<<< HEAD
                     <widget class="QLabel" name="error_notes">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
@@ -252,31 +506,137 @@
                        <verstretch>0</verstretch>
                       </sizepolicy>
                      </property>
+=======
+                    <widget class="QLabel" name="error_legal_status">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                      <property name="text">
                       <string/>
                      </property>
                     </widget>
                    </item>
                    <item>
+<<<<<<< HEAD
                     <widget class="QTextEdit" name="txe_notes">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+=======
+                    <widget class="QComboBox" name="cb_legal_status">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
                      </property>
+<<<<<<< HEAD
                      <property name="sizeAdjustPolicy">
                       <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContentsOnFirstShow</enum>
                      </property>
                      <property name="lineWrapMode">
                       <enum>QTextEdit::LineWrapMode::FixedColumnWidth</enum>
+=======
+                     <property name="placeholderText">
+                      <string>تحـديد الصفة ،،،</string>
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                      </property>
                     </widget>
                    </item>
                   </layout>
                  </item>
+<<<<<<< HEAD
                  <item row="11" column="1">
                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+=======
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>معلومات أخرى</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1" colspan="2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="error_full_name">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="le_full_name">
+                     <property name="placeholderText">
+                      <string>الإسم و اللقب أو الهيئة المختصة ،،،</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>الصفة</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>البريد الإلكتروني</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>الإسم و اللقب</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>الجوال</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="error_phone">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="le_phone">
+                     <property name="inputMask">
+                      <string>999 99 99 99</string>
+                     </property>
+                     <property name="placeholderText">
+                      <string>xxx xx xx xx</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string>الهاتف</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="3">
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -302,22 +662,32 @@
                    </item>
                   </layout>
                  </item>
+<<<<<<< HEAD
                  <item row="7" column="1">
+=======
+                 <item row="2" column="1" colspan="3">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                   <layout class="QHBoxLayout" name="horizontalLayout_6">
                    <property name="spacing">
                     <number>0</number>
                    </property>
+<<<<<<< HEAD
                    <property name="sizeConstraint">
                     <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
                    </property>
                    <item>
                     <widget class="QLabel" name="error_phone">
+=======
+                   <item>
+                    <widget class="QLabel" name="error_address">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                      <property name="text">
                       <string/>
                      </property>
                     </widget>
                    </item>
                    <item>
+<<<<<<< HEAD
                     <widget class="QLineEdit" name="le_phone">
                      <property name="inputMask">
                       <string>999 99 99 99</string>
@@ -331,17 +701,30 @@
                  </item>
                  <item row="3" column="1">
                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+=======
+                    <widget class="QLineEdit" name="le_address"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="7" column="1" colspan="3">
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                    <property name="spacing">
                     <number>0</number>
                    </property>
                    <item>
+<<<<<<< HEAD
                     <widget class="QLabel" name="error_full_name">
+=======
+                    <widget class="QLabel" name="label_8">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                      <property name="text">
                       <string/>
                      </property>
                     </widget>
                    </item>
                    <item>
+<<<<<<< HEAD
                     <widget class="QLineEdit" name="le_full_name">
                      <property name="placeholderText">
                       <string>الإسم و اللقب أو الهيئة المختصة ،،،</string>
@@ -359,10 +742,16 @@
                     <widget class="QLabel" name="error_legal_status">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+=======
+                    <widget class="QTextEdit" name="txe_notes">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
                      </property>
+<<<<<<< HEAD
                      <property name="text">
                       <string/>
                      </property>
@@ -373,10 +762,13 @@
                      <property name="placeholderText">
                       <string>تحـديد الصفة ،،،</string>
                      </property>
+=======
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                     </widget>
                    </item>
                   </layout>
                  </item>
+<<<<<<< HEAD
                  <item row="1" column="0">
                   <widget class="QLabel" name="label_2">
                    <property name="text">
@@ -465,6 +857,8 @@
                    </property>
                   </widget>
                  </item>
+=======
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
                 </layout>
                </widget>
               </item>
@@ -487,6 +881,7 @@
              <attribute name="title">
               <string>محاضر العميل</string>
              </attribute>
+<<<<<<< HEAD
              <layout class="QVBoxLayout" name="verticalLayout_4">
               <item>
                <widget class="QFrame" name="frame_4">
@@ -596,6 +991,8 @@
                </widget>
               </item>
              </layout>
+=======
+>>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
             </widget>
            </widget>
           </widget>

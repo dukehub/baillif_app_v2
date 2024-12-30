@@ -4,18 +4,24 @@ from sqlalchemy import desc
 from sqlalchemy.event import listens_for
 from datetime import datetime
 from sqlalchemy.orm import Session, joinedload
+from helpers.logger import logger
 
 class ClientServices:
     @staticmethod
     def create_client(db, obj: Client):
         """Crée un nouveau client dans la base de données."""
         try:
+            # Convertir l'énumération en chaîne si nécessaire
+            genre_value = obj.genre.value if isinstance(obj.genre, GenreEnum) else obj.genre
+            
             client = Client(
                 nom=obj.nom,
-                genre=obj.genre,
+                genre=genre_value,  # Utiliser la valeur de l'énumération
                 adresse=obj.adresse,
                 phone=obj.phone,
-                email=obj.email
+                email=obj.email,
+                mobile=obj.mobile,
+                notes=obj.notes
             )
             db.add(client)
             db.commit()
@@ -23,19 +29,22 @@ class ClientServices:
             return client
         except Exception as e:
             db.rollback()
-            print(f"Erreur lors de la création du client: {e}")
+            logger.error(f"Erreur lors de la création du client: {str(e)}")
             return None
 
     @staticmethod
-    def delete_client(db, client):
+    def delete_client(db, client_id: int):
         """Supprime un client de la base de données."""
         try:
-            db.delete(client)
-            db.commit()
-            return True
+            client = db.query(Client).get(client_id)
+            if client:
+                db.delete(client)
+                db.commit()
+                return True
+            return False
         except Exception as e:
             db.rollback()
-            print(f"Erreur lors de la suppression du client: {e}")
+            logger.error(f"Erreur lors de la suppression du client: {str(e)}")
             return False
 
     @staticmethod
@@ -44,28 +53,34 @@ class ClientServices:
         try:
             client = db.query(Client).get(client_data.id)
             if client:
+                # Convertir l'énumération en chaîne si nécessaire
+                genre_value = client_data.genre.value if isinstance(client_data.genre, GenreEnum) else client_data.genre
+                
                 client.nom = client_data.nom
-                client.genre = client_data.genre
+                client.genre = genre_value  # Utiliser la valeur de l'énumération
                 client.adresse = client_data.adresse
                 client.phone = client_data.phone
                 client.email = client_data.email
+                client.mobile = client_data.mobile
+                client.notes = client_data.notes
                 db.commit()
                 db.refresh(client)
                 return client
             return None
         except Exception as e:
             db.rollback()
-            print(f"Erreur lors de la mise à jour du client: {e}")
+            logger.error(f"Erreur lors de la mise à jour du client: {str(e)}")
             return None
 
     @staticmethod
-    def get_all_clients(db):
-        """Récupère tous les clients de la base de données."""
+    def get_all_clients(session):
+        """Récupère tous les clients"""
         try:
-            return db.query(Client).order_by(desc(Client.date_creation)).all()
+            clients = session.query(Client).all()
+            return clients
         except Exception as e:
-            print(f"Erreur lors de la récupération des clients: {e}")
-            return []
+            logger.error(f"Erreur lors de la récupération des clients: {str(e)}")
+            return None
 
     @staticmethod
     def get_dossiers_client(db, client: Client):
@@ -73,7 +88,14 @@ class ClientServices:
 
     @staticmethod
     def get_client_by_id(db, client_id: int):
-        return db.query(Client).filter(Client.id == client_id).first()
+        """Récupère un client par son ID avec ses dossiers"""
+        try:
+            return db.query(Client).options(
+                joinedload(Client.dossiers)
+            ).filter(Client.id == client_id).first()
+        except Exception as e:
+            logger.error(f"Erreur lors de la récupération du client {client_id}: {str(e)}")
+            return None
 
     @staticmethod
     def get_client_by_nom(db, nom: str):

@@ -25,16 +25,131 @@ class Ui_form_client(object):
     def setupUi(self, form_client):
         if not form_client.objectName():
             form_client.setObjectName(u"form_client")
-        form_client.resize(836, 297)
+        form_client.resize(752, 300)
         icon = QIcon()
         icon.addFile(u":/icons/icons/users.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         form_client.setWindowIcon(icon)
         self.gridLayout = QGridLayout(form_client)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.error_status = QLabel(form_client)
-        self.error_status.setObjectName(u"error_status")
+        self.label_12 = QLabel(form_client)
+        self.label_12.setObjectName(u"label_12")
 
-        self.gridLayout.addWidget(self.error_status, 1, 1, 1, 1)
+        self.gridLayout.addWidget(self.label_12, 0, 1, 1, 1)
+
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setSpacing(0)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.error_mail = QLabel(form_client)
+        self.error_mail.setObjectName(u"error_mail")
+
+        self.horizontalLayout_7.addWidget(self.error_mail)
+
+        self.le_mail = QLineEdit(form_client)
+        self.le_mail.setObjectName(u"le_mail")
+        self.le_mail.setMaxLength(32767)
+
+        self.horizontalLayout_7.addWidget(self.le_mail)
+
+
+        self.gridLayout.addLayout(self.horizontalLayout_7, 6, 4, 1, 1)
+
+        self.label_9 = QLabel(form_client)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout.addWidget(self.label_9, 9, 1, 2, 1)
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setSpacing(0)
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.error_mobile = QLabel(form_client)
+        self.error_mobile.setObjectName(u"error_mobile")
+
+        self.horizontalLayout_4.addWidget(self.error_mobile)
+
+        self.le_mobile = QLineEdit(form_client)
+        self.le_mobile.setObjectName(u"le_mobile")
+
+        self.horizontalLayout_4.addWidget(self.le_mobile)
+
+
+        self.gridLayout.addLayout(self.horizontalLayout_4, 8, 2, 2, 1)
+
+        self.label_14 = QLabel(form_client)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout.addWidget(self.label_14, 8, 0, 2, 2)
+
+        self.label_11 = QLabel(form_client)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout.addWidget(self.label_11, 4, 1, 1, 1)
+
+        self.horizontalLayout_9 = QHBoxLayout()
+        self.horizontalLayout_9.setSpacing(0)
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.error_legal_status = QLabel(form_client)
+        self.error_legal_status.setObjectName(u"error_legal_status")
+
+        self.horizontalLayout_9.addWidget(self.error_legal_status)
+
+        self.cb_legal_status = QComboBox(form_client)
+        self.cb_legal_status.setObjectName(u"cb_legal_status")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.cb_legal_status.sizePolicy().hasHeightForWidth())
+        self.cb_legal_status.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_9.addWidget(self.cb_legal_status)
+
+
+        self.gridLayout.addLayout(self.horizontalLayout_9, 0, 2, 1, 2)
+
+        self.horizontalLayout_10 = QHBoxLayout()
+        self.horizontalLayout_10.setSpacing(0)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.error_address = QLabel(form_client)
+        self.error_address.setObjectName(u"error_address")
+
+        self.horizontalLayout_10.addWidget(self.error_address)
+
+        self.le_address = QLineEdit(form_client)
+        self.le_address.setObjectName(u"le_address")
+
+        self.horizontalLayout_10.addWidget(self.le_address)
+
+
+        self.gridLayout.addLayout(self.horizontalLayout_10, 3, 2, 3, 3)
+
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setSpacing(0)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.error_full_name = QLabel(form_client)
+        self.error_full_name.setObjectName(u"error_full_name")
+
+        self.horizontalLayout_6.addWidget(self.error_full_name)
+
+        self.le_full_name = QLineEdit(form_client)
+        self.le_full_name.setObjectName(u"le_full_name")
+
+        self.horizontalLayout_6.addWidget(self.le_full_name)
+
+
+        self.gridLayout.addLayout(self.horizontalLayout_6, 1, 2, 2, 2)
+
+        self.label_15 = QLabel(form_client)
+        self.label_15.setObjectName(u"label_15")
+
+        self.gridLayout.addWidget(self.label_15, 1, 1, 1, 1)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout.addItem(self.verticalSpacer, 11, 2, 1, 1)
+
+        self.label_10 = QLabel(form_client)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout.addWidget(self.label_10, 6, 3, 1, 1)
 
         self.frame = QFrame(form_client)
         self.frame.setObjectName(u"frame")
@@ -53,117 +168,63 @@ class Ui_form_client(object):
 
         self.pb_save = QPushButton(self.frame)
         self.pb_save.setObjectName(u"pb_save")
+        self.pb_save.setEnabled(False)
 
         self.horizontalLayout.addWidget(self.pb_save)
 
 
-        self.gridLayout.addWidget(self.frame, 17, 0, 1, 6)
+        self.gridLayout.addWidget(self.frame, 12, 0, 1, 5)
 
-        self.error_address = QLabel(form_client)
-        self.error_address.setObjectName(u"error_address")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setSpacing(0)
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.error_notes = QLabel(form_client)
+        self.error_notes.setObjectName(u"error_notes")
 
-        self.gridLayout.addWidget(self.error_address, 3, 1, 1, 1)
+        self.horizontalLayout_3.addWidget(self.error_notes)
 
-        self.lineEdit = QLineEdit(form_client)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.txe_notes = QTextEdit(form_client)
+        self.txe_notes.setObjectName(u"txe_notes")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.txe_notes.sizePolicy().hasHeightForWidth())
+        self.txe_notes.setSizePolicy(sizePolicy1)
 
-        self.gridLayout.addWidget(self.lineEdit, 3, 2, 1, 4)
+        self.horizontalLayout_3.addWidget(self.txe_notes)
 
-        self.error_name = QLabel(form_client)
-        self.error_name.setObjectName(u"error_name")
 
-        self.gridLayout.addWidget(self.error_name, 1, 4, 1, 1)
+        self.gridLayout.addLayout(self.horizontalLayout_3, 10, 2, 1, 3)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.gridLayout.addItem(self.verticalSpacer, 13, 5, 1, 1)
-
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setSpacing(0)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.error_phone = QLabel(form_client)
         self.error_phone.setObjectName(u"error_phone")
 
-        self.gridLayout.addWidget(self.error_phone, 6, 1, 1, 1)
-
-        self.le_full_name = QLineEdit(form_client)
-        self.le_full_name.setObjectName(u"le_full_name")
-
-        self.gridLayout.addWidget(self.le_full_name, 1, 5, 1, 1)
+        self.horizontalLayout_2.addWidget(self.error_phone)
 
         self.le_phone = QLineEdit(form_client)
         self.le_phone.setObjectName(u"le_phone")
 
-        self.gridLayout.addWidget(self.le_phone, 6, 2, 1, 1)
+        self.horizontalLayout_2.addWidget(self.le_phone)
 
-        self.cb_legal_status = QComboBox(form_client)
-        self.cb_legal_status.setObjectName(u"cb_legal_status")
 
-        self.gridLayout.addWidget(self.cb_legal_status, 1, 2, 1, 1)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 6, 2, 1, 1)
 
-        self.label_2 = QLabel(form_client)
-        self.label_2.setObjectName(u"label_2")
+        self.label_13 = QLabel(form_client)
+        self.label_13.setObjectName(u"label_13")
 
-        self.gridLayout.addWidget(self.label_2, 1, 3, 1, 1)
+        self.gridLayout.addWidget(self.label_13, 6, 1, 1, 1)
 
-        self.label = QLabel(form_client)
-        self.label.setObjectName(u"label")
-
-        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
-
-        self.label_3 = QLabel(form_client)
-        self.label_3.setObjectName(u"label_3")
-
-        self.gridLayout.addWidget(self.label_3, 3, 0, 1, 1)
-
-        self.label_4 = QLabel(form_client)
-        self.label_4.setObjectName(u"label_4")
-
-        self.gridLayout.addWidget(self.label_4, 6, 0, 1, 1)
-
-        self.le_mail = QLineEdit(form_client)
-        self.le_mail.setObjectName(u"le_mail")
-        self.le_mail.setMaxLength(32767)
-
-        self.gridLayout.addWidget(self.le_mail, 7, 5, 1, 1)
-
-        self.label_5 = QLabel(form_client)
-        self.label_5.setObjectName(u"label_5")
-
-        self.gridLayout.addWidget(self.label_5, 7, 3, 1, 1)
-
-        self.error_mail = QLabel(form_client)
-        self.error_mail.setObjectName(u"error_mail")
-
-        self.gridLayout.addWidget(self.error_mail, 7, 4, 1, 1)
-
-        self.label_6 = QLabel(form_client)
-        self.label_6.setObjectName(u"label_6")
-
-        self.gridLayout.addWidget(self.label_6, 7, 0, 1, 1)
-
-        self.le_mobile = QLineEdit(form_client)
-        self.le_mobile.setObjectName(u"le_mobile")
-
-        self.gridLayout.addWidget(self.le_mobile, 7, 2, 1, 1)
-
-        self.error_mobile = QLabel(form_client)
-        self.error_mobile.setObjectName(u"error_mobile")
-
-        self.gridLayout.addWidget(self.error_mobile, 7, 1, 1, 1)
-
-        self.txe_notes = QTextEdit(form_client)
-        self.txe_notes.setObjectName(u"txe_notes")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.txe_notes.sizePolicy().hasHeightForWidth())
-        self.txe_notes.setSizePolicy(sizePolicy)
-
-        self.gridLayout.addWidget(self.txe_notes, 12, 2, 1, 4)
-
-        self.label_7 = QLabel(form_client)
-        self.label_7.setObjectName(u"label_7")
-
-        self.gridLayout.addWidget(self.label_7, 12, 0, 1, 1)
-
+        QWidget.setTabOrder(self.cb_legal_status, self.le_full_name)
+        QWidget.setTabOrder(self.le_full_name, self.le_address)
+        QWidget.setTabOrder(self.le_address, self.le_phone)
+        QWidget.setTabOrder(self.le_phone, self.le_mobile)
+        QWidget.setTabOrder(self.le_mobile, self.le_mail)
+        QWidget.setTabOrder(self.le_mail, self.txe_notes)
+        QWidget.setTabOrder(self.txe_notes, self.pb_save)
+        QWidget.setTabOrder(self.pb_save, self.pb_cancel)
 
         self.retranslateUi(form_client)
 
@@ -172,28 +233,29 @@ class Ui_form_client(object):
 
     def retranslateUi(self, form_client):
         form_client.setWindowTitle(QCoreApplication.translate("form_client", u"\u0625\u0636\u0627\u0641\u0629 \u0639\u0645\u064a\u0644 \u062c\u062f\u064a\u062f", None))
-        self.error_status.setText("")
-        self.pb_cancel.setText(QCoreApplication.translate("form_client", u"\u0625\u0644\u063a\u0627\u0621", None))
-        self.pb_save.setText(QCoreApplication.translate("form_client", u"\u062d\u0641\u0638", None))
-        self.error_address.setText("")
-        self.error_name.setText("")
-        self.error_phone.setText("")
-        self.le_full_name.setPlaceholderText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0625\u0633\u0645 \u0648 \u0627\u0644\u0644\u0642\u0628 \u0623\u0648 \u0627\u0644\u0647\u064a\u0626\u0629 \u0627\u0644\u0645\u062e\u062a\u0635\u0629 \u060c\u060c\u060c", None))
-        self.le_phone.setInputMask(QCoreApplication.translate("form_client", u"999 99 99 99", None))
-        self.le_phone.setPlaceholderText(QCoreApplication.translate("form_client", u"xxx xx xx xx", None))
-        self.cb_legal_status.setPlaceholderText(QCoreApplication.translate("form_client", u"\u062a\u062d\u0640\u062f\u064a\u062f \u0627\u0644\u0635\u0641\u0629 \u060c\u060c\u060c", None))
-        self.label_2.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0625\u0633\u0645 \u0648 \u0627\u0644\u0644\u0642\u0628", None))
-        self.label.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0635\u0641\u0629", None))
-        self.label_3.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0639\u0646\u0648\u0627\u0646", None))
-        self.label_4.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0647\u0627\u062a\u0641", None))
+        self.label_12.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0635\u0641\u0629", None))
+        self.error_mail.setText("")
         self.le_mail.setText("")
         self.le_mail.setPlaceholderText(QCoreApplication.translate("form_client", u"personne@mail.com", None))
-        self.label_5.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a", None))
-        self.error_mail.setText("")
-        self.label_6.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u062c\u0648\u0627\u0644", None))
+        self.label_9.setText(QCoreApplication.translate("form_client", u"\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0623\u062e\u0631\u0649", None))
+        self.error_mobile.setText("")
         self.le_mobile.setInputMask(QCoreApplication.translate("form_client", u"9999 99 99 99", None))
         self.le_mobile.setPlaceholderText(QCoreApplication.translate("form_client", u"9999 99 99 99", None))
-        self.error_mobile.setText("")
-        self.label_7.setText(QCoreApplication.translate("form_client", u"\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0623\u062e\u0631\u0649", None))
+        self.label_14.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u062c\u0648\u0627\u0644", None))
+        self.label_11.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0639\u0646\u0648\u0627\u0646", None))
+        self.error_legal_status.setText("")
+        self.cb_legal_status.setPlaceholderText(QCoreApplication.translate("form_client", u"\u062a\u062d\u0640\u062f\u064a\u062f \u0627\u0644\u0635\u0641\u0629 \u060c\u060c\u060c", None))
+        self.error_address.setText("")
+        self.error_full_name.setText("")
+        self.le_full_name.setPlaceholderText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0625\u0633\u0645 \u0648 \u0627\u0644\u0644\u0642\u0628 \u0623\u0648 \u0627\u0644\u0647\u064a\u0626\u0629 \u0627\u0644\u0645\u062e\u062a\u0635\u0629 \u060c\u060c\u060c", None))
+        self.label_15.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0625\u0633\u0645 \u0648 \u0627\u0644\u0644\u0642\u0628", None))
+        self.label_10.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a", None))
+        self.pb_cancel.setText(QCoreApplication.translate("form_client", u"\u0625\u0644\u063a\u0627\u0621", None))
+        self.pb_save.setText(QCoreApplication.translate("form_client", u"\u062d\u0641\u0638", None))
+        self.error_notes.setText("")
+        self.error_phone.setText("")
+        self.le_phone.setInputMask(QCoreApplication.translate("form_client", u"999 99 99 99", None))
+        self.le_phone.setPlaceholderText(QCoreApplication.translate("form_client", u"xxx xx xx xx", None))
+        self.label_13.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0647\u0627\u062a\u0641", None))
     # retranslateUi
 
