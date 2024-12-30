@@ -4,7 +4,7 @@ from PySide6.QtWidgets import QComboBox, QTextEdit, QDateEdit, QTimeEdit, QLabel
 from abc import ABC, abstractmethod
 from typing import List, Dict
 import logging
-from services.data_manager import DataManager
+from core.data_manager import DataManager
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -88,7 +88,7 @@ class FieldValueGetter:
 class ValidatorManager(QObject):
     validationStateChanged = Signal(bool)
 
-    def __init__(self, ui, error_icon_path=":/icons/icons/exclamation_mark.png"):
+    def __init__(self, ui, error_icon_path=":/icons/icons/State_Validation_Invalid.svg"):
         super().__init__()
         self.error_icon_red = QPixmap(error_icon_path)
         if self.error_icon_red.isNull():

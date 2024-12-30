@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1205, 860)
+        MainWindow.resize(1692, 960)
         MainWindow.setStyleSheet(u"#frame_header {\n"
 "	background-color: #e5e7eb\n"
 "}\n"
@@ -92,7 +92,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 238, 835))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 238, 935))
         sizePolicy.setHeightForWidth(self.scrollAreaWidgetContents.sizePolicy().hasHeightForWidth())
         self.scrollAreaWidgetContents.setSizePolicy(sizePolicy)
         self.verticalLayout_4 = QVBoxLayout(self.scrollAreaWidgetContents)

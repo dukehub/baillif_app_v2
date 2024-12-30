@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icons">
+    <file>icons/State_Validation_Invalid.svg</file>
+    <file>icons/State_Validation_Warning.svg</file>
     <file>icons/trash.svg</file>
     <file>icons/add_white.svg</file>
     <file>icons/edit.svg</file>

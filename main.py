@@ -26,6 +26,7 @@ if __name__ == "__main__":
     else:
         print("Le fichier de traduction arabe n'a pas été trouvé.")
     window = MainWindow()
+    window.setSizeIncrement(1500, 800)
     window.show()
     app.exec()
 
