@@ -12,6 +12,7 @@ if __name__ == "__main__":
     initialize_app()
 
     app = QApplication(sys.argv)
+    app.setFont(QFont("Cairo", 11))
     
     app.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
     app.setStyleSheet(open(css_file, 'r', encoding='utf-8').read())
@@ -27,6 +28,7 @@ if __name__ == "__main__":
         print("Le fichier de traduction arabe n'a pas été trouvé.")
     window = MainWindow()
     window.setSizeIncrement(1500, 800)
+    
     window.show()
     app.exec()
 

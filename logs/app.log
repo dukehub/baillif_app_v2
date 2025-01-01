@@ -4528,3 +4528,213 @@
 2024-12-22 18:47:32 - bailiff_app - DEBUG - État de validation changé: False
 2024-12-22 18:47:32 - bailiff_app - DEBUG - État de validation changé: False
 >>>>>>> d4efa75e606b19c4d8f80da193942904cfdc9955
+2025-01-01 11:05:30 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:05:30 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:05:30 - bailiff_app - INFO - Répertoire templates créé avec succès: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:05:30 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:05:30 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:05:30 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:05:30 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:06:49 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:06:49 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:06:49 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:06:49 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:06:49 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:06:49 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:06:49 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:15:21 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:15:21 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:15:21 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:15:21 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:15:21 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:15:21 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:15:21 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:16:29 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:16:29 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:16:29 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:16:29 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:16:29 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:16:29 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:16:29 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:20:06 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:20:06 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:20:06 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:20:06 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:20:06 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:20:06 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:20:06 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:21:12 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:21:12 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:21:12 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:21:12 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:21:12 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:21:12 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:21:12 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:24:34 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:24:34 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:24:34 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:24:34 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:24:34 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:24:34 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:24:34 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:26:34 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:26:34 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:26:34 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:26:34 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:26:34 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:26:34 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:26:34 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:27:57 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:27:57 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:27:57 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:27:57 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:27:57 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:27:57 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:27:57 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:53:30 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:53:30 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:53:30 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:53:30 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:53:30 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:53:30 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:53:30 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 11:54:49 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 11:54:49 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 11:54:49 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 11:54:49 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 11:54:49 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 11:54:49 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 11:54:49 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 12:05:41 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 12:05:41 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 12:05:41 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 12:05:41 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 12:05:41 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 12:05:41 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 12:05:41 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 12:10:20 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 12:10:20 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 12:10:20 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 12:10:20 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 12:10:20 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 12:10:20 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 12:10:20 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 15:54:14 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 15:54:14 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 15:54:14 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 15:54:14 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 15:54:14 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 15:54:14 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 15:54:14 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 16:08:31 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 16:08:31 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 16:08:31 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 16:08:31 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 16:08:31 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 16:08:31 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 16:08:31 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 16:08:44 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 16:08:44 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 16:08:44 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 16:08:44 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 16:08:44 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 16:08:44 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 16:08:44 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:01:36 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:01:36 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:01:36 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:01:36 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:01:36 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:01:36 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:01:36 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:05:56 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:05:56 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:05:56 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:05:56 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:05:56 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:05:56 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:05:56 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:06:40 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:06:40 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:06:40 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:06:40 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:06:40 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:06:40 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:06:40 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:08:26 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:08:26 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:08:26 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:08:26 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:08:26 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:08:26 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:08:26 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:09:21 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:09:21 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:09:21 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:09:21 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:09:21 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:09:21 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:09:21 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:10:20 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:10:20 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:10:20 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:10:20 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:10:20 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:10:20 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:10:20 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:14:14 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:14:14 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:14:14 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:14:14 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:14:14 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:14:14 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:14:14 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:17:21 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:17:21 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:17:21 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:17:21 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:17:21 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:17:21 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:17:21 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:18:35 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:18:35 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:18:35 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:18:35 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:18:35 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:18:35 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:18:35 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:20:38 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:20:38 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:20:38 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:20:38 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:20:38 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:20:38 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:20:38 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:22:20 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:22:20 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:22:20 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:22:20 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:22:20 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:22:20 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:22:20 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:24:52 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:24:52 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:24:52 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:24:52 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:24:52 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:24:52 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:24:52 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:25:38 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:25:38 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:25:38 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:25:38 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:25:38 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:25:38 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:25:38 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-01 17:29:27 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-01 17:29:27 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-01 17:29:27 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-01 17:29:27 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-01 17:29:27 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-01 17:29:27 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-01 17:29:27 - bailiff_app - INFO - Initialisation de l'application terminée avec succès

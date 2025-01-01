@@ -19,22 +19,45 @@ QTableView {
     font-size: 11px;
 }
 
-/*= Style Page Client
-  ==================================================== */
-	#page_clients #pb_add {
-		text-align: center;	
-		background-color:  rgb(60, 146, 92);
-		color: rgb(255, 255, 255);
-	}
-	#page_clients #pb_add:hover {
-		background-color: #49b270;
-		color: #9dead1;
-	}
-	#page_clients QLineEdit {
-		text-align: right; /* Aligne le texte à droite */
-		height: 32px;
-		/* Définit la direction droite à gauche */
-	}
+/*
+MainWindow Style
+*/
+#frame_header {
+	background-color: #e5e7eb
+}
+#frame_header QLabel {
+	color: #fff;
+	background-color: transparent;
+}
+#frame_header QPushButton{
+border: none;
+width: 50px;
+height: 40px;
+}
+#lbl_icon {
+min-width: 30px;
+min-height: 30px;
+max-width: 30px;
+max-height: 30px;
+background-color: #fff;
+border-radius: 15px;
+border: 1px solid #fff;
+
+}
+/*
+#frame_main{
+
+	background-color: rgb(216, 216, 216);
+}
+*/
+#pb_maximize:hover, #pb_minimize:hover, #pb_menu:hover {
+	background-color: rgb(216, 216, 216);
+}
+#pb_close:hover {
+	background-color: #c42b1c;
+}
+
+
 	
 
 	
@@ -53,12 +76,7 @@ QTableView {
   ==================================================== */
 
 /*= Style for header widget START
-  ==================================================== */
-	#widget {
-		background-color: #DFE2E7;
-	}
-/*= END
- 
+
 
 /*= Style for menu with icon and text START
   ==================================================== */
@@ -115,15 +133,14 @@ QTableView {
 
 /* =================================================== */
 /* Validators
-/* =================================================== */
-
-
 
  QToolTip {
-        background-color: #FFCCCC; /* Rouge clair */
-        color: #B00000; /* Texte rouge foncé */
-        border: 1px solid #B00000; /* Bordure rouge */
+        background-color: #FFCCCC; 
+        color: #B00000; 
+        border: 1px solid #B00000;
         padding: 5px;
         border-radius: 4px;
     }
+ =================================================== 
+ */
 

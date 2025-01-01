@@ -1,13 +1,15 @@
 from PySide6.QtCore import Qt, QAbstractTableModel
 from models.models import Client
 import logging
-
+from core import state_manager, data_manager
 logger = logging.getLogger(__name__)
 
 
 class ClientTableModel(QAbstractTableModel):
     def __init__(self, clients=None):
         super().__init__()
+        self.state_manager = state_manager
+        clients = self.state_manager.get_state("clients")
         self.clients = clients or []
         self.headers = ["الإسم و اللقب", "الصفة القانونية"]
 

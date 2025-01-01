@@ -27,40 +27,7 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1692, 960)
-        MainWindow.setStyleSheet(u"#frame_header {\n"
-"	background-color: #e5e7eb\n"
-"}\n"
-"#frame_header QLabel {\n"
-"	color: #fff;\n"
-"	background-color: transparent;\n"
-"}\n"
-"#frame_header QPushButton{\n"
-"border: none;\n"
-"width: 50px;\n"
-"height: 40px;\n"
-"}\n"
-"#lbl_icon {\n"
-"min-width: 30px;\n"
-"min-height: 30px;\n"
-"max-width: 30px;\n"
-"max-height: 30px;\n"
-"background-color: #fff;\n"
-"border-radius: 15px;\n"
-"border: 1px solid #fff;\n"
-"\n"
-"}\n"
-"\n"
-"#frame_main{\n"
-"\n"
-"	background-color: rgb(216, 216, 216);\n"
-"}\n"
-"#pb_maximize:hover, #pb_minimize:hover, #pb_menu:hover {\n"
-"	background-color: rgb(216, 216, 216);\n"
-"}\n"
-"#pb_close:hover {\n"
-"	background-color: #c42b1c;\n"
-"}\n"
-"")
+        MainWindow.setStyleSheet(u"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)

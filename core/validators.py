@@ -36,13 +36,12 @@ class NotEmptyValidator(AbstractValidator):
 class EmailValidator(AbstractValidator):
     """Validateur qui vérifie qu'une valeur est une adresse email valide"""
     
-    def __init__(self, error_message: str = "عنوان البريد الإلكتروني غير صالح", optional: bool = False):
+    def __init__(self, error_message: str = "عنوان البريد الإلكتروني غير صالح"):
         super().__init__(error_message)
-        self.optional = optional
     
     def validate(self, value: str) -> bool:
         if not value:
-            return self.optional  # Retourne True si le champ est optionnel, False sinon
+            return False
         return '@' in value and '.' in value.split('@')[1]
 
 class ValidationRule:
@@ -117,18 +116,29 @@ class ValidatorManager(QObject):
         self.validated_fields = set()  # Pour suivre les champs qui ont été validés
         
         # Chargement des icônes
-        self.error_icon = QPixmap(":/icons/icons/high_importance.png")
+        self.error_icon = QPixmap(":/icons/icons/State_Validation_Invalid.svg")
+        self.warning_icon = QPixmap(":/icons/icons/State_Validation_Warning.svg")
+        
+        # Redimensionner les deux icônes à la même taille
+        icon_size = 16  # Taille standard pour les deux icônes
+        
         if self.error_icon.isNull():
             logger.error("Impossible de charger l'icône d'erreur")
         else:
-            self.error_icon = self.error_icon.scaled(16, 16, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            self.error_icon = self.error_icon.scaled(icon_size, icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            
+        if self.warning_icon.isNull():
+            logger.error("Impossible de charger l'icône d'avertissement")
+        else:
+            self.warning_icon = self.warning_icon.scaled(icon_size, icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         
         # Émettre les événements de validation via event_manager
         self.validationStateChanged.connect(
             lambda state: event_manager.emit('validation_state_changed', state)
         )
-
-    def add_validation_rule(self, field_name: str, error_label_name: str, validators: List[AbstractValidator]):
+    
+    def add_validation_rule(self, field_name: str, error_label_name: str, validators: List[AbstractValidator], optional: bool = False):
+        
         """Ajoute une règle de validation"""
         if not hasattr(self.ui, field_name):
             logger.warning(f"Le champ {field_name} n'existe pas")
@@ -143,8 +153,12 @@ class ValidatorManager(QObject):
             self.error_labels[field_name] = error_label
             
             # Configure le label d'erreur
-            if not error_label.pixmap() or error_label.pixmap().isNull():
-                error_label.setPixmap(self.error_icon)
+            if optional:
+                if not error_label.pixmap() or error_label.pixmap().isNull():
+                    error_label.setPixmap(self.warning_icon)
+            else:
+                if not error_label.pixmap() or error_label.pixmap().isNull():
+                    error_label.setPixmap(self.error_icon)
             error_label.hide()
         else:
             logger.warning(f"Label d'erreur {error_label_name} non trouvé pour {field_name}")
@@ -185,53 +199,65 @@ class ValidatorManager(QObject):
             # Ajouter le champ à l'ensemble des champs validés
             self.validated_fields.add(field_name)
 
-            # Vérifier si c'est un champ email optionnel vide
-            is_optional_email = any(
-                isinstance(validator, EmailValidator) and 
-                validator.optional and 
-                not value 
-                for validator in rule.validators
-            )
-
-            # Si c'est un email optionnel vide, on le considère comme valide
-            if is_optional_email:
+            # Récupérer les paramètres de validation pour ce champ
+            is_optional = getattr(rule, 'optional', False)
+            
+            # Si le champ est optionnel et vide, on le considère comme valide
+            if is_optional and (not value or str(value).strip() == ""):
                 self._clear_error(widget)
-            else:
-                # Sinon on vérifie tous les validateurs
-                for validator in rule.validators:
-                    if not validator.validate(value):
-                        error_messages.append(validator.error_message)
+                return True, []
+
+            # Sinon on vérifie tous les validateurs
+            for validator in rule.validators:
+                if not validator.validate(value):
+                    error_messages.append(validator.error_message)
 
             if error_messages:
-                self._show_error(widget, "\n".join(error_messages))
+                if is_optional:
+                    # Pour les champs optionnels, utiliser l'icône d'avertissement
+                    self._show_warning(widget, "\n".join(error_messages))
+                else:
+                    # Pour les champs requis, utiliser l'icône d'erreur
+                    self._show_error(widget, "\n".join(error_messages))
             else:
                 self._clear_error(widget)
 
             # Vérifier si tous les champs sont valides
-            all_fields_valid = True
-            for validation_rule in self.validation_rules:
-                field_widget = getattr(self.ui, validation_rule.field_name)
-                error_label = self.error_labels.get(validation_rule.field_name)
-                
-                # Un champ est invalide si son label d'erreur est visible
-                if error_label and error_label.isVisible():
-                    all_fields_valid = False
-                    break
-                
-                # Vérifier si c'est un champ obligatoire non vide
-                field_value = FieldValueGetter.get_value(field_widget)
-                has_required = any(isinstance(v, NotEmptyValidator) for v in validation_rule.validators)
-                
-                if has_required and not field_value:
-                    all_fields_valid = False
-                    break
-
+            all_fields_valid = self._check_all_fields_validity()
+            
             self.validationStateChanged.emit(all_fields_valid)
             return not bool(error_messages), error_messages
 
         except AttributeError as e:
             logger.error(f"Erreur d'attribut pour le champ {field_name}: {e}")
             return False, ["Erreur interne de validation"]
+
+    def _show_warning(self, widget: QWidget, message: str):
+        """Affiche un avertissement pour un widget"""
+        error_label = self.error_labels.get(widget.objectName())
+        if error_label:
+            if not error_label.pixmap() or error_label.pixmap().isNull():
+                error_label.setPixmap(self.warning_icon)
+            error_label.setToolTip(message)
+            error_label.show()
+
+    def _check_all_fields_validity(self) -> bool:
+        """Vérifie si tous les champs sont valides"""
+        for validation_rule in self.validation_rules:
+            field_widget = getattr(self.ui, validation_rule.field_name)
+            error_label = self.error_labels.get(validation_rule.field_name)
+            
+            # Un champ est invalide si son label d'erreur est visible
+            if error_label and error_label.isVisible():
+                return False
+            
+            # Vérifier si c'est un champ obligatoire non vide
+            if not getattr(validation_rule, 'optional', False):
+                field_value = FieldValueGetter.get_value(field_widget)
+                if not field_value or str(field_value).strip() == "":
+                    return False
+
+        return True
 
     def validate(self) -> tuple[bool, dict[str, list[str]]]:
         """Valide tous les champs"""

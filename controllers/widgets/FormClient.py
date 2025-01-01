@@ -40,7 +40,8 @@ class FormClient(QDialog):
         self.validator_manager.add_validation_rule(
             "le_mail", 
             "error_mail", 
-            [EmailValidator("صيغة البريد الإلكتروني غير صحيحة", optional=True)]
+            [EmailValidator("صيغة البريد الإلكتروني غير صحيحة")],
+            optional=True
         )
 
     def _setup_signals(self):
@@ -76,7 +77,7 @@ class FormClient(QDialog):
                 'adresse': self.ui.le_address.text(),
                 'email': self.ui.le_mail.text(),
                 'phone': self.ui.le_phone.text(),
-                'notes': self.ui.te_notes.toPlainText()
+                'notes': self.ui.txe_notes.toPlainText()
             }
             # Émettre l'événement de sauvegarde
             event_manager.emit('client_save_requested', client_data)
@@ -115,6 +116,5 @@ class FormClientController(QObject):
 
    
 
-    def on_save_clicked(self):
-        pass
+   
         
