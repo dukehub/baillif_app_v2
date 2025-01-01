@@ -7,3 +7,4 @@ ui/__pycache__/
 helpers/__pycache__/
 models/__pycache__/
 ui/__pycache__/
+logs/app.log
