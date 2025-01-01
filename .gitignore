@@ -1,13 +1,42 @@
-.venv/
-__pycache__/
-controllers/__pycache__/
-services/__pycache__/
-core/__pycache__/
-ui/__pycache__/
-helpers/__pycache__/
-models/__pycache__/
-ui/__pycache__/
+# Logs
 logs/
-logs/*
+*.log
+logs/app.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
 
 
