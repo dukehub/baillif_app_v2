@@ -3,9 +3,9 @@ from PySide6.QtCore import QObject, Slot
 from ui.page_clients_ui import Ui_page_clients
 from controllers.widgets.FormClient import FormClient
 from models.models import Client
-from models.ClientTableMoel import ClientTableModel
+from models.ClientTableModel import ClientTableModel
 from helpers.logger import logger
-from core import event_manager, data_manager
+from core import event_manager, data_manager, state_manager
 
 from models.models import GenreEnum
 
@@ -14,7 +14,9 @@ class PageClients(QWidget):
         super().__init__()
         self.ui = Ui_page_clients()
         self.ui.setupUi(self)
-        self.ui.tableView_client.doubleClicked.connect(self.edit_client)
+        
+        # Ajouter une variable pour suivre le client sélectionné
+        self.selected_client_id = None
         
         # Configuration du modèle
         self.clients_model = ClientTableModel()
@@ -31,9 +33,10 @@ class PageClients(QWidget):
         self.ui.pb_delete.setEnabled(False)
         self.ui.pb_edit.setEnabled(False)
         
-        # S'abonner aux événements de mise à jour
-        event_manager.subscribe('client_updated', self.on_client_updated)
-        
+        # S'abonner aux changements d'état
+        self.state_manager = state_manager
+        self.state_manager.subscribe("current_client", self.on_current_client_changed)
+
     def _setup_table(self):
         """Configure l'apparence et le comportement de la table"""
         table = self.ui.tableView_client
@@ -51,16 +54,20 @@ class PageClients(QWidget):
         table.setShowGrid(False)
         
         # Hauteur des lignes
-        table.verticalHeader().setDefaultSectionSize(40)
+        table.verticalHeader().setDefaultSectionSize(30)
         table.verticalHeader().hide()  # Cacher les numéros de lignes
 
     def _setup_signals(self):
+        """Configure les signaux"""
         self.ui.pb_add.clicked.connect(self.add_client)
         self.ui.pb_edit.clicked.connect(self.edit_client)
         self.ui.pb_delete.clicked.connect(self.delete_client)
         
         # Connecter la sélection de la table à l'affichage des détails
         self.ui.tableView_client.selectionModel().selectionChanged.connect(self.on_client_selected)
+        
+        # Ajouter le double-clic pour modifier
+        self.ui.tableView_client.doubleClicked.connect(self.edit_client)
 
     def clear_client_info(self):
         """Efface les informations du client des labels"""
@@ -73,9 +80,9 @@ class PageClients(QWidget):
         self.ui.lbl_notes.setText("")
 
     def display_client_info(self, client: Client):
-        """Affiche les informations du client dans les labels avec un format amélioré"""
+        """Affiche les informations du client dans les labels"""
         if client:
-            # Format des informations avec des titres en gras
+            # S'assurer d'utiliser les données les plus récentes
             self.ui.lbl_legal_status.setText(f"<b>الصفة القانونية:</b> {client.genre or '-'}")
             self.ui.lbl_full_name.setText(f"<b>الإسم و اللقب:</b> {client.nom or '-'}")
             self.ui.lbl_address.setText(f"<b>العنوان:</b> {client.adresse or '-'}")
@@ -84,7 +91,6 @@ class PageClients(QWidget):
             self.ui.lbl_email.setText(f"<b>البريد الإلكتروني:</b> {client.email or '-'}")
             self.ui.lbl_notes.setText(f"<b>ملاحظات:</b> {client.notes or '-'}")
             
-            # Activer le groupe d'informations
             self.ui.gb_infos.setEnabled(True)
         else:
             self.clear_client_info()
@@ -97,12 +103,15 @@ class PageClients(QWidget):
             # Récupérer le client sélectionné
             row = indexes[0].row()
             selected_client = self.clients_model.clients[row]
+            # Stocker l'ID du client sélectionné
+            self.selected_client_id = selected_client.id
             # Afficher ses informations
             self.display_client_info(selected_client)
             # Activer les boutons
             self.ui.pb_delete.setEnabled(True)
             self.ui.pb_edit.setEnabled(True)
         else:
+            self.selected_client_id = None
             self.clear_client_info()
             # Désactiver les boutons
             self.ui.pb_delete.setEnabled(False)
@@ -173,15 +182,13 @@ class PageClients(QWidget):
                     "حدث خطأ أثناء حذف العميل"
                 )
 
-    def on_client_updated(self, updated_client):
-        """Appelé quand un client est mis à jour"""
+    def on_current_client_changed(self, updated_client):
+        """Appelé quand le client courant change"""
         if updated_client is not None:
-            # Si le client affiché est celui qui a été mis à jour
-            current_selection = self.ui.tableView_client.selectedIndexes()
-            if current_selection:
-                row = current_selection[0].row()
-                displayed_client = self.clients_model.clients[row]
-                if displayed_client.id == updated_client.id:
-                    # Mettre à jour l'affichage avec le client mis à jour
-                    self.display_client_info(updated_client)
+            # Mettre à jour le modèle de la table
+            self.clients_model.update_client(updated_client)
+            
+            # Si c'est le client actuellement sélectionné, mettre à jour l'affichage
+            if self.selected_client_id == updated_client.id:
+                self.display_client_info(updated_client)
 

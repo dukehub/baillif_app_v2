@@ -51,9 +51,12 @@ class ClientServices:
     def update_client(session, client):
         """Met à jour un client dans la base de données"""
         try:
-            session.merge(client)  # Utiliser merge au lieu de add
+            # Fusionner le client avec la session
+            merged_client = session.merge(client)
             session.commit()
-            return client
+            # Rafraîchir pour avoir les données à jour
+            session.refresh(merged_client)
+            return merged_client
         except Exception as e:
             session.rollback()
             logger.error(f"Erreur lors de la mise à jour du client: {str(e)}")

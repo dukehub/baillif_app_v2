@@ -4,6 +4,7 @@ from PySide6.QtCore import QObject
 from core import data_manager, state_manager, event_manager
 from core.validators import ValidatorManager, NotEmptyValidator, EmailValidator, SelectionValidator
 from ui.widgets.form_client_ui import Ui_form_client
+from helpers.logger import logger
 
 class FormClient(QDialog):
     def __init__(self, client: Client = None):
@@ -102,9 +103,17 @@ class FormClient(QDialog):
             }
             
             if self.edit_mode:
+                # Vérifier que quelqu'un écoute l'événement avant de le déclencher
+                subscribers_count = event_manager.get_subscribers_count('client_updated')
+                logger.debug(f"FormClient: {subscribers_count} abonnés trouvés pour client_updated")
+                
                 self.client.update(**client_data)
-                self.data_manager.update_client(self.client)
-                event_manager.emit('client_updated', self.client)
+                updated_client = self.data_manager.update_client(self.client)
+                
+                if not updated_client:
+                    logger.error("FormClient: Échec de la mise à jour du client")
+                    QMessageBox.warning(self, "خطأ", "حدث خطأ أثناء تحديث بيانات العميل")
+                    return
             else:
                 client = Client(**client_data)
                 self.data_manager.add_client(client)
