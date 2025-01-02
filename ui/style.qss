@@ -169,29 +169,10 @@ QToolTip {
 
 /* Style pour les tables */
 
-/* Style pour le groupe d'informations client */
-QGroupBox {
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    margin-top: 1ex;
-    padding: 5px;
-    background-color: #ffffff;
-}
 
-QGroupBox::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top right;
-    padding: 0 5px;
-    color: #1a2e05;
-    font-weight: bold;
-    font-size: 11pt;
-}
 
 /* Style pour les labels d'information */
-QLabel {
-    padding: 5px;
-    min-height: 25px;
-}
+
 
 /* Style spécifique pour les labels d'information client */
 #gb_infos QLabel {
@@ -224,13 +205,6 @@ QLabel {
     color: #0d6efd;
 }
 
-/* Style pour les labels vides */
-QLabel:empty {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
 
 /* Ajustement de la taille du groupe */
 #gb_infos {

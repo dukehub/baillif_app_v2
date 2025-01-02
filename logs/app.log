@@ -973,3 +973,140 @@
 2025-01-02 17:39:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
 2025-01-02 17:40:15 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
 2025-01-02 17:40:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 17:41:33 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 17:41:33 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 17:41:33 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 17:41:33 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 17:41:33 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 17:41:33 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 17:41:33 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 17:41:33 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 17:41:33 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 17:41:33 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 17:41:33 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 17:41:35 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 17:41:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 17:41:35 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 17:41:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 17:41:39 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 17:41:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 18:01:24 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 18:01:24 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 18:01:24 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 18:01:24 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 18:01:24 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 18:01:24 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 18:01:24 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 18:01:24 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 18:01:24 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 18:01:24 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 18:01:24 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 18:01:27 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:01:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:01:27 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:01:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:02:14 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 18:02:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 18:02:58 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 18:02:58 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 18:02:58 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 18:02:58 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 18:02:58 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 18:02:58 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 18:02:58 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 18:02:58 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 18:02:58 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 18:02:58 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 18:02:58 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 18:03:01 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:03:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:03:04 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:03:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:03:04 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:03:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:03:12 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 18:03:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 18:04:00 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 18:04:00 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 18:04:00 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 18:04:00 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 18:04:00 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 18:04:00 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 18:04:00 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 18:04:01 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 18:04:01 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 18:04:01 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 18:04:01 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 18:04:03 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:04:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:04:03 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:04:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:04:21 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:04:21 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:04:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-02 18:04:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-02 18:04:55 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 18:04:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 18:10:41 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 18:10:41 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 18:10:41 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 18:10:41 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 18:10:41 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 18:10:41 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 18:10:41 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 18:10:41 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 18:10:41 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 18:10:41 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 18:10:41 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 18:10:42 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:10:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:10:44 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:10:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:10:44 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:10:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:10:47 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 18:10:47 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 18:11:14 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 18:11:14 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 18:11:14 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 18:11:14 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 18:11:14 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 18:11:14 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 18:11:14 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 18:11:14 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 18:11:14 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 18:11:14 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 18:11:14 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 18:11:16 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:11:16 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:11:16 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:11:16 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:11:18 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 18:11:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
+2025-01-02 18:11:39 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 18:11:39 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-02 18:11:39 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\templates
+2025-01-02 18:11:39 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-02 18:11:39 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 18:11:39 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 18:11:39 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 18:11:39 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_page_change depuis MainWindow
+2025-01-02 18:11:39 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_page_change: 1
+2025-01-02 18:11:39 - bailiff_app - DEBUG - EventManager: Nouvel abonnement à cancel_app_close depuis MainWindow
+2025-01-02 18:11:39 - bailiff_app - DEBUG - EventManager: Total abonnés pour cancel_app_close: 1
+2025-01-02 18:11:41 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:11:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:11:41 - bailiff_app - DEBUG - EventManager: Émission de before_page_change
+2025-01-02 18:11:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_page_change
+2025-01-02 18:11:43 - bailiff_app - DEBUG - EventManager: Émission de before_app_close
+2025-01-02 18:11:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour before_app_close
