@@ -4,6 +4,7 @@ from ui.page_clients_ui import Ui_page_clients
 from controllers.widgets.FormClient import FormClient
 from models.models import Client
 from models.ClientTableModel import ClientTableModel
+from models.ClientDossiersTableModel import ClientDossiersTableModel
 from helpers.logger import logger
 from core import event_manager, data_manager, state_manager
 
@@ -22,6 +23,8 @@ class PageClients(QWidget):
         self.clients_model = ClientTableModel()
         self.ui.tableView_client.setModel(self.clients_model)
         
+        self.client_dossiers_model = ClientDossiersTableModel()
+        self.ui.tableView_dossiers.setModel(self.client_dossiers_model)
         # Configuration de la table
         self._setup_table()
         self._setup_signals()
@@ -107,12 +110,16 @@ class PageClients(QWidget):
             self.selected_client_id = selected_client.id
             # Afficher ses informations
             self.display_client_info(selected_client)
+            # Mettre à jour le modèle des dossiers
+            self.client_dossiers_model.set_client(selected_client)
             # Activer les boutons
             self.ui.pb_delete.setEnabled(True)
             self.ui.pb_edit.setEnabled(True)
         else:
             self.selected_client_id = None
             self.clear_client_info()
+            # Réinitialiser le modèle des dossiers
+            self.client_dossiers_model.set_client(None)
             # Désactiver les boutons
             self.ui.pb_delete.setEnabled(False)
             self.ui.pb_edit.setEnabled(False)
