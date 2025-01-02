@@ -5,6 +5,7 @@ from sqlalchemy.sql import func
 from helpers.config import Base
 
 import enum, json
+from datetime import datetime
 
 
 # Enums
@@ -18,7 +19,7 @@ class Templates(enum.Enum):
     LOGO_TABLE = "بهامش مع شعار"
 
 class GenreEnum(enum.Enum):
-    PERSON = "شخص فردي"
+    PERSON = "شخص طبيعي"
     COMPANY = "شركة"
     AVOCAT = "محامي"
     HUISSIER = "محضر"
@@ -198,6 +199,15 @@ class Client(Base):
             self.genre = value.value
         else:
             self.genre = value
+    
+    def update(self, **kwargs):
+        """Met à jour les attributs du client avec les nouvelles valeurs"""
+        for key, value in kwargs.items():
+            if hasattr(self, key):
+                setattr(self, key, value)
+        
+        # Mettre à jour la date de modification
+        self.updated_at = datetime.now()
 
 class User(Base):
     __tablename__ = "users"

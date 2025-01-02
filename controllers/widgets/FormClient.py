@@ -10,14 +10,25 @@ class FormClient(QDialog):
         super().__init__()
         self.ui = Ui_form_client()
         self.ui.setupUi(self)
-        self.controller = FormClientController()
+        self.data_manager = data_manager
+        
         self.validator_manager = ValidatorManager(self.ui)
         self.validator_manager.validationStateChanged.connect(self.on_validation_state_changed)
+        
+        # Mode édition ou création
+        self.edit_mode = client is not None
+        self.client = client
+        
         self.load_legal_status()
         self._setup_validators()
         self._setup_signals()
-        # Désactiver le bouton save au démarrage
-        self.ui.pb_save.setEnabled(False)
+        
+        # Charger les données du client si en mode édition
+        if self.edit_mode:
+            self.load_client_data()
+            self.setWindowTitle("تعديل بيانات العميل")
+        else:
+            self.ui.pb_save.setEnabled(False)
 
     def _setup_validators(self):
         """Configure les règles de validation pour chaque champ"""
@@ -67,6 +78,16 @@ class FormClient(QDialog):
             # Ajoute chaque type depuis l'énumération
         for genre in GenreEnum:
             self.ui.cb_legal_status.addItem(genre.value)  # On utilise .value pour obtenir la chaîne en arabe
+    
+    def load_client_data(self):
+        """Charge les données du client dans le formulaire"""
+        if self.client:
+            self.ui.le_full_name.setText(self.client.nom)
+            self.ui.cb_legal_status.setCurrentText(self.client.genre)
+            self.ui.le_address.setText(self.client.adresse)
+            self.ui.le_phone.setText(self.client.phone)
+            self.ui.le_mail.setText(self.client.email)
+            self.ui.txe_notes.setPlainText(self.client.notes)
 
     def on_save_clicked(self):
         """Gère le clic sur le bouton Enregistrer"""
@@ -79,8 +100,15 @@ class FormClient(QDialog):
                 'phone': self.ui.le_phone.text(),
                 'notes': self.ui.txe_notes.toPlainText()
             }
-            # Émettre l'événement de sauvegarde
-            event_manager.emit('client_save_requested', client_data)
+            
+            if self.edit_mode:
+                self.client.update(**client_data)
+                self.data_manager.update_client(self.client)
+                event_manager.emit('client_updated', self.client)
+            else:
+                client = Client(**client_data)
+                self.data_manager.add_client(client)
+            
             self.close()
 
     def on_cancel_clicked(self):
@@ -108,11 +136,7 @@ class FormClient(QDialog):
         """Gère le changement d'état de la validation"""
         self.ui.pb_save.setEnabled(is_valid)
 
-class FormClientController(QObject):
-    def __init__(self):
-        super().__init__()
-        self.state_manager = state_manager
-        self.data_manager = data_manager
+   
 
    
 

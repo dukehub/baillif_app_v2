@@ -3,7 +3,7 @@ from core.data_services import (ClientServices, DocumentServices, SectionService
                                     RoomServices, TribunalServices, DefendeurServices, DossierServices, FieldValueServices,
                                     CategoryServices, BailiffServices, ArchiveBoxServices)
 from .db import Session
-from core import state_manager
+from core import state_manager, event_manager
 from helpers import logger
 
 
@@ -130,18 +130,24 @@ class DataManager(QObject):
             return self._update_clients_state()
         return None
     
-    def delete_client(self, client):
+    def delete_client(self, client_id):
         """Supprime un client et met à jour l'état."""
-        success = self._with_session(ClientServices.delete_client, client)
+        success = self._with_session(ClientServices.delete_client, client_id)
         if success:
             return self._update_clients_state()
         return None
     
-    def update_client(self, client_data):
-        """Met à jour un client et met à jour l'état."""
-        result = self._with_session(ClientServices.update_client, client_data)
-        if result:
-            return self._update_clients_state()
+    def update_client(self, client):
+        """Met à jour un client existant"""
+        updated_client = self._with_session(ClientServices.update_client, client)
+        if updated_client:
+            # Récupérer la liste complète des clients mise à jour
+            all_clients = self._with_session(ClientServices.get_all_clients)
+            # Mettre à jour l'état avec la nouvelle liste
+            self.state_manager.set_state("clients", all_clients)
+            # Émettre l'événement avec le client mis à jour
+            event_manager.emit('client_updated', updated_client)
+            return updated_client
         return None
 
     def get_all_councils(self):

@@ -1,4 +1,4 @@
-from .state_manager import state_manager
+from core import state_manager
 
 class StateServices:
     @staticmethod

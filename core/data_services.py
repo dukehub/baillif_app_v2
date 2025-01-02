@@ -48,27 +48,14 @@ class ClientServices:
             return False
 
     @staticmethod
-    def update_client(db, client_data):
-        """Met à jour un client dans la base de données."""
+    def update_client(session, client):
+        """Met à jour un client dans la base de données"""
         try:
-            client = db.query(Client).get(client_data.id)
-            if client:
-                # Convertir l'énumération en chaîne si nécessaire
-                genre_value = client_data.genre.value if isinstance(client_data.genre, GenreEnum) else client_data.genre
-                
-                client.nom = client_data.nom
-                client.genre = genre_value  # Utiliser la valeur de l'énumération
-                client.adresse = client_data.adresse
-                client.phone = client_data.phone
-                client.email = client_data.email
-                client.mobile = client_data.mobile
-                client.notes = client_data.notes
-                db.commit()
-                db.refresh(client)
-                return client
-            return None
+            session.merge(client)  # Utiliser merge au lieu de add
+            session.commit()
+            return client
         except Exception as e:
-            db.rollback()
+            session.rollback()
             logger.error(f"Erreur lors de la mise à jour du client: {str(e)}")
             return None
 

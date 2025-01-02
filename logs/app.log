@@ -4738,3 +4738,477 @@
 2025-01-01 17:29:27 - bailiff_app - INFO - Tous les répertoires requis sont prêts
 2025-01-01 17:29:27 - bailiff_app - INFO - Base de données initialisée avec succès
 2025-01-01 17:29:27 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 08:43:49 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 08:43:49 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 08:43:49 - bailiff_app - INFO - Répertoire templates créé avec succès: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 08:43:49 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 08:43:49 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 08:43:49 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 08:43:49 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 08:46:52 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 08:46:52 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 08:46:52 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 08:46:52 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 08:46:52 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 08:46:52 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 08:46:52 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 08:49:47 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 08:49:47 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 08:49:47 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 08:49:47 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 08:49:47 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 08:49:47 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 08:49:47 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 08:51:06 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 08:51:06 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 08:51:06 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 08:51:06 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 08:51:06 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 08:51:06 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 08:51:06 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 08:52:07 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 08:52:07 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 08:52:07 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 08:52:07 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 08:52:07 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 08:52:07 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 08:52:07 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 08:56:36 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 08:56:36 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 08:56:36 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 08:56:36 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 08:56:36 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 08:56:36 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 08:56:36 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:00:44 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:00:44 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:00:44 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:00:44 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:00:44 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:00:44 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:00:44 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:03:33 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:03:33 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:03:33 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:03:33 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:03:33 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:03:33 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:03:33 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:19:41 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:19:41 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:19:41 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:19:41 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:19:41 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:19:42 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:19:42 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:23:05 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:23:05 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:23:05 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:23:05 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:23:05 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:23:05 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:23:05 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:24:09 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:24:09 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:24:09 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:24:09 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:24:09 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:24:09 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:24:09 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:24:55 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:24:55 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:24:55 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:24:55 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:24:55 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:24:55 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:24:55 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:25:04 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:25:04 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:25:04 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:25:04 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:25:04 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:25:04 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:25:04 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:26:25 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:26:25 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:26:25 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:26:25 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:26:25 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:26:25 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:26:25 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:28:17 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:28:17 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:28:17 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:28:17 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:28:17 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:28:17 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:28:17 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:29:17 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:29:17 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:29:17 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:29:17 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:29:17 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:29:17 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:29:17 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:37:04 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:37:04 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:37:04 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:37:04 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:37:04 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:37:04 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:37:04 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:39:25 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:39:25 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:39:25 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:39:25 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:39:25 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:39:25 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:39:25 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 09:42:39 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 09:42:39 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 09:42:39 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 09:42:39 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 09:42:39 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 09:42:39 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 09:42:39 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 10:01:04 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 10:01:04 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 10:01:04 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 10:01:04 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 10:01:04 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 10:01:04 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 10:01:04 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 10:08:56 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 10:08:56 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 10:08:56 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 10:08:56 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 10:08:56 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 10:08:56 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 10:08:56 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 10:11:46 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 10:11:46 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 10:11:46 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 10:11:46 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 10:11:46 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 10:11:46 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 10:11:46 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:03:42 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:03:42 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:03:42 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:03:42 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:03:42 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:03:42 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:03:42 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:15:01 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:15:01 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:15:01 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:15:01 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:15:01 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:15:01 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:15:01 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:15:28 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:15:28 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:15:28 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:15:28 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:15:28 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:15:28 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:15:28 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:24:42 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:24:42 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:24:42 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:24:42 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:24:42 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:24:42 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:24:42 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:25:50 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:25:50 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:25:50 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:25:50 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:25:50 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:25:50 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:25:50 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:28:20 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:28:20 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:28:20 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:28:20 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:28:20 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:28:20 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:28:20 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:35:49 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:35:49 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:35:49 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:35:49 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:35:49 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:35:49 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:35:49 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:40:10 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:40:10 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:40:10 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:40:10 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:40:10 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:40:10 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:40:10 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:40:58 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:40:58 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:40:58 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:40:58 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:40:58 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:40:58 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:40:58 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:45:21 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:45:21 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:45:21 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:45:21 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:45:21 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:45:21 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:45:21 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:46:35 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:46:35 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:46:35 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:46:35 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:46:35 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:46:35 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:46:35 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:51:12 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:51:12 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:51:12 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:51:12 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:51:12 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:51:12 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:51:12 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:51:40 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:51:40 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:51:40 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:51:40 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:51:40 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:51:40 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:51:40 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:56:01 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:56:01 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:56:01 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:56:01 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:56:01 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:56:01 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:56:01 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 11:59:47 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 11:59:47 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 11:59:47 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 11:59:47 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 11:59:47 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 11:59:47 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 11:59:47 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:03:31 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:03:31 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:03:31 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:03:31 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:03:31 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:03:31 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:03:31 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:05:36 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:05:36 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:05:36 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:05:36 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:05:36 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:05:36 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:05:36 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:07:40 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:07:40 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:07:40 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:07:40 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:07:40 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:07:40 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:07:40 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:11:52 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:11:52 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:11:52 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:11:52 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:11:52 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:11:52 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:11:52 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:15:56 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:15:56 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:15:56 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:15:56 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:15:56 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:15:56 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:15:56 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:20:28 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:20:28 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:20:28 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:20:28 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:20:28 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:20:28 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:20:28 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:22:41 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:22:41 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:22:41 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:22:41 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:22:41 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:22:42 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:22:42 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:24:37 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:24:37 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:24:37 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:24:37 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:24:37 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:24:37 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:24:37 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:24:38 - bailiff_app - DEBUG - Abonnement à l'événement client_updated
+2025-01-02 12:24:38 - bailiff_app - DEBUG - Abonnement à l'événement cancel_page_change
+2025-01-02 12:24:38 - bailiff_app - DEBUG - Abonnement à l'événement cancel_app_close
+2025-01-02 12:24:41 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:44 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:47 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement form_validation_complete
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement client_updated
+2025-01-02 12:24:49 - bailiff_app - DEBUG - Émission de l'événement client_updated
+2025-01-02 12:24:57 - bailiff_app - DEBUG - Émission de l'événement before_app_close
+2025-01-02 12:26:40 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:26:40 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:26:40 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:26:40 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:26:40 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:26:40 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:26:40 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:26:41 - bailiff_app - DEBUG - Abonnement à l'événement client_updated
+2025-01-02 12:26:41 - bailiff_app - DEBUG - Abonnement à l'événement cancel_page_change
+2025-01-02 12:26:41 - bailiff_app - DEBUG - Abonnement à l'événement cancel_app_close
+2025-01-02 12:26:44 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:26:44 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:26:46 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:48 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:50 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement form_validation_complete
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement client_updated
+2025-01-02 12:26:52 - bailiff_app - DEBUG - Émission de l'événement client_updated
+2025-01-02 12:26:55 - bailiff_app - DEBUG - Émission de l'événement before_app_close
+2025-01-02 12:30:41 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:30:41 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:30:41 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:30:41 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:30:41 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:30:41 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:30:41 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:30:42 - bailiff_app - DEBUG - Abonnement à l'événement client_updated
+2025-01-02 12:30:42 - bailiff_app - DEBUG - Abonnement à l'événement cancel_page_change
+2025-01-02 12:30:42 - bailiff_app - DEBUG - Abonnement à l'événement cancel_app_close
+2025-01-02 12:30:43 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:31:17 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:17 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:17 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:17 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:17 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:17 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:19 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:19 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:19 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:19 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:19 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:19 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:20 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:20 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:20 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:20 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement form_validation_complete
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement validation_state_changed
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement client_updated
+2025-01-02 12:31:21 - bailiff_app - DEBUG - Émission de l'événement client_updated
+2025-01-02 12:31:27 - bailiff_app - DEBUG - Émission de l'événement before_app_close
+2025-01-02 12:33:55 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:33:55 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:33:55 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:33:55 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:33:55 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:33:55 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:33:55 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:33:56 - bailiff_app - DEBUG - Abonnement à l'événement client_updated
+2025-01-02 12:33:56 - bailiff_app - DEBUG - Abonnement à l'événement cancel_page_change
+2025-01-02 12:33:56 - bailiff_app - DEBUG - Abonnement à l'événement cancel_app_close
+2025-01-02 12:33:57 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:34:02 - bailiff_app - ERROR - Erreur lors de la suppression du client: (sqlite3.ProgrammingError) Error binding parameter 1: type 'Client' is not supported
+[SQL: SELECT clients.id AS clients_id, clients.nom AS clients_nom, clients.genre AS clients_genre, clients.adresse AS clients_adresse, clients.phone AS clients_phone, clients.mobile AS clients_mobile, clients.notes AS clients_notes, clients.email AS clients_email, clients.date_creation AS clients_date_creation 
+FROM clients 
+WHERE clients.id = ?]
+[parameters: (<models.models.Client object at 0x0000020AC471E7E0>,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-02 12:34:09 - bailiff_app - DEBUG - Émission de l'événement before_app_close
+2025-01-02 12:35:01 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:35:01 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:35:01 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:35:01 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:35:01 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:35:01 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:35:01 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:35:01 - bailiff_app - DEBUG - Abonnement à l'événement client_updated
+2025-01-02 12:35:01 - bailiff_app - DEBUG - Abonnement à l'événement cancel_page_change
+2025-01-02 12:35:01 - bailiff_app - DEBUG - Abonnement à l'événement cancel_app_close
+2025-01-02 12:35:03 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:35:06 - bailiff_app - ERROR - Erreur lors de la suppression du client: (sqlite3.ProgrammingError) Error binding parameter 1: type 'Client' is not supported
+[SQL: SELECT clients.id AS clients_id, clients.nom AS clients_nom, clients.genre AS clients_genre, clients.adresse AS clients_adresse, clients.phone AS clients_phone, clients.mobile AS clients_mobile, clients.notes AS clients_notes, clients.email AS clients_email, clients.date_creation AS clients_date_creation 
+FROM clients 
+WHERE clients.id = ?]
+[parameters: (<models.models.Client object at 0x0000029723472810>,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-02 12:35:09 - bailiff_app - DEBUG - Émission de l'événement before_app_close
+2025-01-02 12:36:31 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-02 12:36:31 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-02 12:36:31 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-02 12:36:31 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-02 12:36:31 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-02 12:36:31 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-02 12:36:31 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-02 12:36:32 - bailiff_app - DEBUG - Abonnement à l'événement client_updated
+2025-01-02 12:36:32 - bailiff_app - DEBUG - Abonnement à l'événement cancel_page_change
+2025-01-02 12:36:32 - bailiff_app - DEBUG - Abonnement à l'événement cancel_app_close
+2025-01-02 12:36:36 - bailiff_app - DEBUG - Émission de l'événement before_page_change
+2025-01-02 12:36:46 - bailiff_app - DEBUG - Émission de l'événement before_app_close
