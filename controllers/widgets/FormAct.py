@@ -1,10 +1,12 @@
-from PySide6.QtWidgets import QDialog, QCompleter
+from PySide6.QtWidgets import QDialog, QCompleter, QMessageBox
 from PySide6.QtCore import QDate, QTime, Qt, QDateTime
 from ui.widgets.form_act_ui import Ui_form_act
 from models.models import Dossier, Client, Demandeur, Defendeur, RapportType, FieldValue, Document, Category, Tribunal, Council, Room, Section, GenreEnum
 from core import data_manager, state_manager
 from core.validators import ValidatorManager, NotEmptyValidator,  DateValidator, SelectionValidator
 from controllers.widgets.FormClient import FormClient
+from helpers.logger import logger
+
 class FormAct(QDialog):
     def __init__(self, dossier: Dossier=None):
         super().__init__()
@@ -49,7 +51,7 @@ class FormAct(QDialog):
         self.ui.cb_room.currentTextChanged.connect(self.on_room_changed)
         self.ui.cb_section.currentTextChanged.connect(self.on_section_changed) 
         self.ui.tb_save.setDisabled(True)
-        self.validator_manager.validationStateChanged.connect(lambda valid: self.ui.tb_save.setEnabled(valid))
+        self.validator_manager.validationStateChanged.connect(self.on_validation_state_changed)
         self.ui.tb_save.clicked.connect(self.save_dossier)
         self.ui.tb_close.clicked.connect(self.close)
         self.ui.cb_type_rapport.addItems( [item.value for item in RapportType])
@@ -99,7 +101,13 @@ class FormAct(QDialog):
         self.validator_manager.add_validation_rule("de_audience", "error_date_audience", [NotEmptyValidator(), DateValidator()])
         self.validator_manager.add_validation_rule("le_hall", "error_hall", [NotEmptyValidator()])
         self.validator_manager.add_validation_rule("le_case", "error_case", [NotEmptyValidator()])
+        
+       # Validation en temps réel
+       
 
+    def on_validation_state_changed(self, is_valid: bool):
+        """Gère le changement d'état de la validation"""
+        self.ui.tb_save.setEnabled(is_valid)    
         
     def  set_form_dossier(self, dossier):
         self.client = self.data_manager.get_client_by_id(dossier.client_id)
@@ -134,19 +142,15 @@ class FormAct(QDialog):
         self.ui.le_case.setText(field_dict.get("case_number", "").field_value)
         self.ui.le_hall.setText(field_dict.get("hall", "").field_value)
        
-
-       
-      
-
     def on_type_rapport_changed(self, index):
-        if index == 0:  
-            self.load_data_tribunal()
+        if index == 0:        
             self.tribunal_visible(True)
             self.council_visible(False)
         else:
-            self.load_data_council(self.state_manager.get_state("councils", []))
             self.tribunal_visible(False)
             self.council_visible(True)
+        # refraichir la validation
+        self.validator_manager.validate_all()
 
     def tribunal_visible(self, visible):
         self.load_data_tribunal(self.state_manager.get_state("tribunaux", []))
@@ -198,6 +202,7 @@ class FormAct(QDialog):
         self.ui.cb_client.setCompleter(self.completer)
 
     def load_data_tribunal(self, tribunals):
+
         self.list_tribunal = [tribunal.nom for tribunal in tribunals]  
         self.ui.cb_tribunal.clear()
         self.ui.cb_tribunal_registary.clear() 
@@ -208,7 +213,7 @@ class FormAct(QDialog):
 
         self.ui.cb_tribunal_registary.addItems(self.list_tribunal)
         self.ui.cb_tribunal_registary.setCompleter(self.tribunal_reg_completer)
-        self.validator_manager.connect_real_time_validation()
+        
 
     def load_data_council(self, councils):
         #self.list_council = [council.nom for council in self.data_manager.get_all_councils()]
@@ -254,8 +259,10 @@ class FormAct(QDialog):
         self.defendeur_completer.setFilterMode(Qt.MatchContains)
         self.ui.cb_defendeur.addItems(self.list_defendeurs)
         self.ui.cb_defendeur.setCompleter(self.defendeur_completer)
+        
     def add_client(self):        
         dlg = FormClient()
+        dlg.exec()
         client_data = dlg.get_client_data()
         if client_data:
             self.load_data_client(self.state_manager.get_state("clients", []))
@@ -485,15 +492,23 @@ class FormAct(QDialog):
 
     def save_dossier(self):
         try:
-            documents = [self.tribunal_field, self.section_field,self.tribunal_registary_field, self.council_field, self.room_field, self.council_registary_field, self.hall_field, self.date_audience_field, self.hour_audience_field, self.case_number_field, self.date_registary_field]
+            # Préparer les documents
+            documents = [
+                self.tribunal_field, self.section_field, self.tribunal_registary_field,
+                self.council_field, self.room_field, self.council_registary_field,
+                self.hall_field, self.date_audience_field, self.hour_audience_field,
+                self.case_number_field, self.date_registary_field
+            ]
+            
+            # Récupérer les données nécessaires
             self.client = self.data_manager.get_client_by_name(self.ui.cb_client.currentText())
             category = self.data_manager.get_category_by_nom(self.ui.cb_type_rapport.currentText())
             self.document = self.data_manager.get_document_by_category_id(category.id)
 
-       
+            # Initialiser les champs
             self.init_fields()
 
-
+            # Sauvegarder les entités liées
             self.save_demandeur()
             self.save_defendeur()
             self.save_tribunal()
@@ -503,30 +518,53 @@ class FormAct(QDialog):
             self.save_room()
             self.save_section()
             
-            if self.dossier:
-                
+            if self.dossier:  # Mode édition
+                # Mettre à jour le dossier existant
                 self.dossier.client_id = self.client.id
                 self.dossier.demandeur_id = self.demandeur.id
                 self.dossier.defendeur_id = self.defendeur.id
                 self.dossier.document_id = self.document.id
                 
-                self.data_manager.update_dossier(self.dossier)
+                updated_dossier = self.data_manager.update_dossier(self.dossier)
+                if not updated_dossier:
+                    raise Exception("Échec de la mise à jour du dossier")
                 
-                
+                # Mettre à jour les champs
                 for field in self.fields:
                     next_field = next((x for x in documents if x.field_name == field.field_name), None)
-                    field.document_id = self.document.id
-                    field.field_value = next_field.field_value
-                    self.data_manager.update_field(field)              
-            else:
+                    if next_field:
+                        field.document_id = self.document.id
+                        field.field_value = next_field.field_value
+                        self.data_manager.update_field(field)
+                    
+            else:  # Mode création
+                if not all([self.client, self.demandeur, self.defendeur, self.document]):
+                    raise Exception("Données manquantes pour la création du dossier")
+                    
+                # Créer le nouveau dossier
+                self.dossier = self.data_manager.add_dossier(
+                    self.client.id,
+                    self.demandeur.id,
+                    self.defendeur.id,
+                    self.document.id
+                )
                 
-                self.dossier : Dossier = self.data_manager.add_dossier(self.client.id, self.demandeur.id, self.defendeur.id, self.document.id)
+                if not self.dossier:
+                    raise Exception("Échec de la création du dossier")
+                    
+                # Ajouter les champs
                 for field in documents:
                     self.data_manager.add_field(field, self.dossier.id, self.document.id)
             
             self.close()
+            
         except Exception as e:
-            print(f"Error saving dossier: {str(e)}")
+            logger.error(f"Error saving dossier: {str(e)}")
+            QMessageBox.critical(
+                self,
+                "خطأ",
+                "حدث خطأ أثناء حفظ الملف"
+            )
    
         
     def export_dossier(self):

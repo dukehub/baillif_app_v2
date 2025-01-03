@@ -115,8 +115,8 @@ class FormClient(QDialog):
                     QMessageBox.warning(self, "خطأ", "حدث خطأ أثناء تحديث بيانات العميل")
                     return
             else:
-                client = Client(**client_data)
-                self.data_manager.add_client(client)
+                self.client = Client(**client_data)
+                self.data_manager.add_client(self.client)
             
             self.close()
 
@@ -144,6 +144,9 @@ class FormClient(QDialog):
     def on_validation_state_changed(self, is_valid: bool):
         """Gère le changement d'état de la validation"""
         self.ui.pb_save.setEnabled(is_valid)
+    
+    def get_client_data(self):
+        return self.client
 
    
 
