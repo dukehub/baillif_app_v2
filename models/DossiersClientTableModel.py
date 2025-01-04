@@ -3,31 +3,37 @@ from PySide6.QtCore import QAbstractTableModel, Qt, Signal
 from PySide6.QtGui import QIcon
 from core import state_manager, data_manager
 
-class ClientDossiersTableModel(QAbstractTableModel):
+class DossiersClientTableModel(QAbstractTableModel):
     dataChangedSignal = Signal()
-    def __init__(self, parent = None):
+    
+    def __init__(self, parent=None):
         super().__init__(parent)
         self.dossiers = []
+        self.current_client_id = None
         self._true_icon = QIcon(":/icons/icons/green_flag.png")  
         self._false_icon = QIcon(":/icons/icons/red_flag.png")
-        self.state_manager = state_manager
-        self.data_manager = data_manager
-        #self.state_manager.subscribe("dossiers", self.on_dossiers_updated)
-
         
-    def on_dossiers_updated(self, dossiers):
-        """Mise à jour des dossiers."""
-        self.beginResetModel()
-        self.dossiers = dossiers or []
-        self.endResetModel() 
+        # S'abonner aux changements d'état des dossiers
+        state_manager.subscribe("dossiers_client", self.on_dossiers_updated)
 
     def set_client(self, client):
+        """Définit le client actuel et charge ses dossiers"""
         if client:
-            self.dossiers = self.data_manager.get_dossiers_client(client)
-            self.refresh(self.dossiers)
-            self.state_manager.set_state("dossiers_client", self.dossiers)
-            
-      
+            self.current_client_id = client.id
+            self.dossiers = data_manager.get_dossiers_client(client.id)
+            self.beginResetModel()
+            self.endResetModel()
+            self.dataChangedSignal.emit()
+
+    def on_dossiers_updated(self, dossiers):
+        """Mise à jour des dossiers"""
+        if dossiers:
+            # Ne mettre à jour que si les dossiers concernent le client actuel
+            if self.current_client_id and any(d.client_id == self.current_client_id for d in dossiers):
+                self.dossiers = [d for d in dossiers if d.client_id == self.current_client_id]
+                self.beginResetModel()
+                self.endResetModel()
+                self.dataChangedSignal.emit()
 
     def rowCount(self, parent = None):
         return len(self.dossiers)
@@ -119,6 +125,3 @@ class ClientDossiersTableModel(QAbstractTableModel):
             self.endResetModel()
             self.dataChangedSignal.emit()
 
-    def on_dossiers_updated(self, dossiers): # Mise à jour des dossiers depuis le StateManager
-        self.dossiers = self.state_manager.get_state("dossiers_client", [])
-        self.refresh(self.dossiers)

@@ -44,7 +44,8 @@ class DataManager(QObject):
         logger.info("get_all_dossiers")
         if dossiers is not None:
             self.state_manager.set_state("dossiers", dossiers)
-            logger.info(f"dossiers: {dossiers}")
+            self.state_manager.set_state("dossiers_client", dossiers)
+            
         return dossiers
     def _update_demandeurs_state(self):
         """Met à jour l'état des demandeurs."""
@@ -289,19 +290,19 @@ class DataManager(QObject):
     def get_dossiers_not_archived(self):
         return self._with_session(DossierServices.get_dossiers_not_archived)
 
-    def get_dossiers_client(self, client):
+    def get_dossiers_client(self, client_id):
         """Récupère tous les dossiers d'un client."""
-        dossiers = self._with_session(DossierServices.get_dossiers_by_client_id, client.id)
-        if dossiers:
-            self.state_manager.set_state("dossiers_client", dossiers)
-        return dossiers
+        return self._with_session(DossierServices.get_dossiers_by_client_id, client_id)
+        
 
     def add_dossier(self, client_id, demandeur_id, defendeur_id, document_id):
-        
         result = self._with_session(DossierServices.create_dossier, client_id, demandeur_id, defendeur_id, document_id)
         if result:
+            # Mettre à jour l'état global des dossiers
             self._update_dossiers_state()
-        
+            # Mettre à jour spécifiquement les dossiers du client
+            dossiers_client = self.get_dossiers_client(client_id)
+            self.state_manager.set_state("dossiers_client", dossiers_client)
         return result
 
     def update_dossier(self, dossier):
