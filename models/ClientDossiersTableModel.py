@@ -12,7 +12,7 @@ class ClientDossiersTableModel(QAbstractTableModel):
         self._false_icon = QIcon(":/icons/icons/red_flag.png")
         self.state_manager = state_manager
         self.data_manager = data_manager
-        self.state_manager.subscribe("dossiers", self.on_dossiers_updated)
+        #self.state_manager.subscribe("dossiers", self.on_dossiers_updated)
 
         
     def on_dossiers_updated(self, dossiers):

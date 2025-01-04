@@ -41,12 +41,15 @@ class DataManager(QObject):
     def _update_dossiers_state(self):
         """Met à jour l'état des dossiers."""
         dossiers = self._with_session(DossierServices.get_all_dossiers)
+        logger.info("get_all_dossiers")
         if dossiers is not None:
             self.state_manager.set_state("dossiers", dossiers)
+            logger.info(f"dossiers: {dossiers}")
         return dossiers
     def _update_demandeurs_state(self):
         """Met à jour l'état des demandeurs."""
         demandeurs = self._with_session(DemandeurServices.get_all_demandeurs)
+        
         if demandeurs is not None:
             self.state_manager.set_state("demandeurs", demandeurs)
         return demandeurs
@@ -233,7 +236,7 @@ class DataManager(QObject):
         return self._with_session(DocumentServices.get_document_by_id, id)
 
     def get_all_demandeurs(self):
-        return self._with_session(DemandeurServices.get_all_demandeurs)
+        return self._update_demandeurs_state()
 
     def add_demandeur(self, new_demandeur):
         result = self._with_session(DemandeurServices.create_demandeur, new_demandeur)
@@ -275,7 +278,7 @@ class DataManager(QObject):
         return self._with_session(DefendeurServices.get_defendeur_by_id, id)
 
     def get_all_dossiers(self):
-        return self._with_session(DossierServices.get_all_dossiers)
+        return self._update_dossiers_state()
 
     def get_dossier_att_by_id(self, id):
         return self._with_session(DossierServices.get_dossier_att_by_id, id)
@@ -294,9 +297,11 @@ class DataManager(QObject):
         return dossiers
 
     def add_dossier(self, client_id, demandeur_id, defendeur_id, document_id):
+        
         result = self._with_session(DossierServices.create_dossier, client_id, demandeur_id, defendeur_id, document_id)
         if result:
             self._update_dossiers_state()
+        
         return result
 
     def update_dossier(self, dossier):
@@ -320,8 +325,8 @@ class DataManager(QObject):
     def add_field(self, new_field, dossier_id, document_id):
         result = self._with_session(FieldValueServices.create_field_value, new_field, dossier_id, document_id)
         if result:
-            self._update_fields_state()
-        return result
+           return result
+        
 
     def update_field(self, field_value):
         return self._with_session(FieldValueServices.update_field, field_value)

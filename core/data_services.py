@@ -94,6 +94,7 @@ class ClientServices:
 class DossierServices:
     @staticmethod
     def get_all_dossiers(db):
+        
         return db.query(
             Dossier.id.label("id"),
             Dossier.code,

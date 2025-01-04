@@ -14,6 +14,16 @@ class FormAct(QDialog):
         self.ui.setupUi(self)
         self.data_manager = data_manager
         self.state_manager = state_manager
+        
+        # Charger les données initiales dans le state_manager
+        self.data_manager._update_clients_state()
+        self.data_manager._update_demandeurs_state()
+        self.data_manager._update_defendeurs_state()
+        self.data_manager._update_councils_state()
+        self.data_manager._update_rooms_state()
+        self.data_manager._update_sections_state()
+        self.data_manager._update_tribunals_state()
+        
         self.validator_manager = ValidatorManager(self.ui)
         self.init_validation()
         
@@ -58,14 +68,7 @@ class FormAct(QDialog):
         self.ui.cb_type_rapport.currentIndexChanged.connect(self.on_type_rapport_changed)
         self.ui.cb_type_rapport.setCurrentIndex(0)
 
-        self.state_manager.subscribe("clients", self.load_data_client)
-        self.state_manager.subscribe("demandeurs", self.load_data_demandeur)
-        self.state_manager.subscribe("defendeurs", self.load_data_defendeur)
-        self.state_manager.subscribe("tribunals", self.load_data_tribunal)
-        self.state_manager.subscribe("councils", self.load_data_council)
-        self.state_manager.subscribe("rooms", self.load_data_room)
-        self.state_manager.subscribe("sections", self.load_data_section)
-        #self.state_manager.subscribe("dossiers", self.load_data_dossiers)
+        
 
         self.init_forms()
         if dossier:
@@ -73,13 +76,16 @@ class FormAct(QDialog):
             self.set_form_dossier(dossier)
 
     def init_forms(self):
+        """Initialise tous les formulaires avec les données du state_manager"""
         self.load_data_client(self.state_manager.get_state("clients", []))
+        self.load_data_demandeur(self.state_manager.get_state("demandeurs", []))
+        self.load_data_defendeur(self.state_manager.get_state("defendeurs", []))
         self.load_data_council(self.state_manager.get_state("councils", []))
         self.load_data_room(self.state_manager.get_state("rooms", []))
         self.load_data_section(self.state_manager.get_state("sections", []))
         self.load_data_tribunal(self.state_manager.get_state("tribunals", []))
-        self.load_data_demandeur(self.state_manager.get_state("demandeurs", []))
-        self.load_data_defendeur(self.state_manager.get_state("defendeurs", []))
+        
+        # Initialiser les dates et l'heure
         self.ui.de_audience.setDate(QDate.currentDate())
         self.ui.de_registary.setDate(QDate.currentDate())
         self.ui.te_audience.setTime(QDateTime.currentDateTime().time())
@@ -194,9 +200,7 @@ class FormAct(QDialog):
 
     def load_data_client(self, clients):
         self.ui.cb_client.clear()
-        #self.list_clients = [client.nom for client in self.data_manager.get_all_clients()] 
         self.list_clients = [client.nom for client in clients]
-        #self.list_clients = self.state_manager.get_state("clients", [])   
         self.completer = QCompleter(self.list_clients, self)
         self.ui.cb_client.addItems(self.list_clients)
         self.ui.cb_client.setCompleter(self.completer)
@@ -245,7 +249,6 @@ class FormAct(QDialog):
     def load_data_demandeur(self, demandeurs):
         """Load demandeur data from state."""
         self.ui.cb_demandeur.clear()
-        demandeurs = self.state_manager.get_state("demandeurs", [])
         self.list_demandeurs = [demandeur.nom for demandeur in demandeurs]
         self.demandeur_completer = QCompleter(self.list_demandeurs, self)
         self.demandeur_completer.setFilterMode(Qt.MatchContains)
@@ -324,11 +327,7 @@ class FormAct(QDialog):
     def save_tribunal_registary(self):
         try:
             tribunal = self.data_manager.get_tribunal_by_name(self.ui.cb_tribunal_registary.currentText())
-            if tribunal:
-                self.tribunal_registary = tribunal
-                tribunal.nom = self.ui.cb_tribunal_registary.currentText()
-                self.data_manager.update_tribunal(self.tribunal)
-            else:
+            if tribunal is None:
                 tribunal = Tribunal()
                 tribunal.nom = self.ui.cb_tribunal_registary.currentText()
                 self.tribunal_registary = self.data_manager.add_tribunal(tribunal)
@@ -385,11 +384,7 @@ class FormAct(QDialog):
     def save_section(self):
         try:
             section = self.data_manager.get_section_by_name(self.ui.cb_section.currentText())
-            if section:
-                self.section = section
-                self.section.nom = self.ui.cb_section.currentText()
-                self.data_manager.update_section(self.section)
-            else:
+            if section is None:
                 section = Section()
                 section.nom = self.ui.cb_section.currentText()
                 self.section = self.data_manager.add_section(section)
@@ -414,32 +409,32 @@ class FormAct(QDialog):
             print(f"Error saving demandeur: {str(e)}")
     
     def save_defendeur(self):
+        logger.info(f"Defendeur:")
         try:
             if self.data_manager.get_defendeur_by_name(self.ui.cb_defendeur.currentText()):
                 self.defendeur = self.data_manager.get_defendeur_by_name(self.ui.cb_defendeur.currentText())
                 self.defendeur.nom = self.ui.cb_defendeur.currentText()
                 self.defendeur.adresse = self.ui.le_address_defendeur.text()
+                
                 self.data_manager.update_defendeur(self.defendeur)
             else:
                 defendeur = Defendeur() 
                 defendeur.nom = self.ui.cb_defendeur.currentText()
                 defendeur.adresse = self.ui.le_address_defendeur.text()
+                
                 self.defendeur = self.data_manager.add_defendeur(defendeur)
                 self.ui.cb_defendeur.setCurrentIndex(self.list_defendeurs.index(defendeur.nom))
+                
         except Exception as e:
             print(f"Error saving defendeur: {str(e)}")
     def save_tribunal(self):
         try:
             tribunal = self.data_manager.get_tribunal_by_name(self.ui.cb_tribunal.currentText())
-            if tribunal:
-                self.tribunal = tribunal
-                tribunal.nom = self.ui.cb_tribunal.currentText()
-                self.data_manager.update_tribunal(self.tribunal)
-            else:
+            if tribunal is None:
                 tribunal = Tribunal()
                 tribunal.nom = self.ui.cb_tribunal.currentText()
                 self.tribunal = self.data_manager.add_tribunal(tribunal)
-                self.ui.cb_tribunal.setCurrentIndex(self.list_tribunal.index(tribunal.nom))
+                self.ui.cb_tribunal.setCurrentIndex(self.list_tribunal.index(tribunal.nom))     
         except Exception as e:
             print(f"Error saving tribunal: {str(e)}")
     
@@ -504,21 +499,24 @@ class FormAct(QDialog):
             self.client = self.data_manager.get_client_by_name(self.ui.cb_client.currentText())
             category = self.data_manager.get_category_by_nom(self.ui.cb_type_rapport.currentText())
             self.document = self.data_manager.get_document_by_category_id(category.id)
-
+            
             # Initialiser les champs
             self.init_fields()
 
             # Sauvegarder les entités liées
             self.save_demandeur()
             self.save_defendeur()
-            self.save_tribunal()
-            self.save_tribunal_registary()
-            self.save_council()
-            self.save_council_registary()
-            self.save_room()
-            self.save_section()
+            if category.nom == "المحكمة":
+                self.save_tribunal()
+                self.save_tribunal_registary()
+                self.save_section()
+            else:
+                self.save_council()
+                self.save_room()
+                self.save_council_registary()
             
-            if self.dossier:  # Mode édition
+            
+            if self.dossier is not None:  # Mode édition
                 # Mettre à jour le dossier existant
                 self.dossier.client_id = self.client.id
                 self.dossier.demandeur_id = self.demandeur.id
@@ -532,6 +530,7 @@ class FormAct(QDialog):
                 # Mettre à jour les champs
                 for field in self.fields:
                     next_field = next((x for x in documents if x.field_name == field.field_name), None)
+                   
                     if next_field:
                         field.document_id = self.document.id
                         field.field_value = next_field.field_value
@@ -542,6 +541,10 @@ class FormAct(QDialog):
                     raise Exception("Données manquantes pour la création du dossier")
                     
                 # Créer le nouveau dossier
+                logger.info(f"client: {self.client}")
+                logger.info(f"demandeur: {self.demandeur}")
+                logger.info(f"defendeur: {self.defendeur}")
+                logger.info(f"document: {self.document}")
                 self.dossier = self.data_manager.add_dossier(
                     self.client.id,
                     self.demandeur.id,
@@ -553,6 +556,7 @@ class FormAct(QDialog):
                     raise Exception("Échec de la création du dossier")
                     
                 # Ajouter les champs
+                
                 for field in documents:
                     self.data_manager.add_field(field, self.dossier.id, self.document.id)
             
