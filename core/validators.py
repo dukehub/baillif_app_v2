@@ -27,9 +27,12 @@ class NotEmptyValidator(AbstractValidator):
         super().__init__(error_message)
     
     def validate(self, value: any) -> bool:
-        if value is None:
+        if isinstance(value, QComboBox):
+            # Pour un QComboBox, vérifier l'index et le texte
+            return  bool(value.currentText().strip())
+        elif value is None:
             return False
-        if isinstance(value, str):
+        elif isinstance(value, str):
             return bool(value.strip())
         return bool(value)
 
@@ -59,20 +62,17 @@ class SelectionValidator(AbstractValidator):
         super().__init__(error_message)
     
     def validate(self, value: any) -> bool:
-        combo = value
-        current_index = combo.currentIndex()
-        current_text = combo.currentText()
-        
-        # Vérifie si une valeur est sélectionnée
-        if current_index == -1 or not current_text.strip():
+        if not isinstance(value, QComboBox):
             return False
             
-        # Vérifie si la valeur existe dans les items
-        all_items = [combo.itemText(i) for i in range(combo.count())]
-        if current_text not in all_items:
+        # Vérifier que le texte n'est pas vide
+        current_text = value.currentText().strip()
+        if not current_text:
             return False
             
-        return True
+        # Vérifier que le texte est dans la liste des items
+        all_items = [value.itemText(i).strip() for i in range(value.count())]
+        return current_text in all_items
 
 class DateValidator(AbstractValidator):
     def __init__(self, error_message: str = "التاريخ غير صالح"):
@@ -87,12 +87,12 @@ class FieldValueGetter:
     @staticmethod
     def get_value(widget: QWidget) -> any:
         """Récupère la valeur d'un widget selon son type"""
-        if isinstance(widget, QLineEdit):
+        if isinstance(widget, QComboBox):
+            return widget  # Retourner le widget QComboBox lui-même
+        elif isinstance(widget, QLineEdit):
             return widget.text()
         elif isinstance(widget, QTextEdit):
             return widget.toPlainText()
-        elif isinstance(widget, QComboBox):
-            return widget.currentText()
         elif isinstance(widget, QDateEdit):
             return widget.date()
         elif isinstance(widget, QTimeEdit):
@@ -253,22 +253,19 @@ class ValidatorManager(QObject):
     def _check_all_fields_validity(self) -> bool:
         """Vérifie si tous les champs sont valides"""
         for validation_rule in self.validation_rules:
-            field_widget = getattr(self.ui, validation_rule.field_name)
-            error_label = self.error_labels.get(validation_rule.field_name)
-            field_value = FieldValueGetter.get_value(field_widget)
-            
-            # Pour un champ optionnel vide, on continue
-            if validation_rule.optional and (not field_value or str(field_value).strip() == ""):
-                continue
+            try:
+                widget = getattr(self.ui, validation_rule.field_name)
+                value = FieldValueGetter.get_value(widget)
                 
-            # Si le label d'erreur est visible, le champ est invalide
-            if error_label and error_label.isVisible():
+                # Vérifier chaque validateur pour ce champ
+                for validator in validation_rule.validators:
+                    if not validator.validate(value):
+                        return False
+                    
+            except Exception as e:
+                logger.error(f"Erreur lors de la validation de {validation_rule.field_name}: {e}")
                 return False
             
-            # Pour un champ requis, vérifier qu'il n'est pas vide
-            if not validation_rule.optional and (not field_value or str(field_value).strip() == ""):
-                return False
-
         return True
 
     def validate(self) -> tuple[bool, dict[str, list[str]]]:
@@ -299,7 +296,11 @@ class ValidatorManager(QObject):
         elif isinstance(widget, QTextEdit):
             widget.textChanged.connect(lambda: self._validate_field(widget.objectName()))
         elif isinstance(widget, QComboBox):
+            # Connecter à la fois le changement d'index et le changement de texte
             widget.currentIndexChanged.connect(lambda: self._validate_field(widget.objectName()))
+            widget.currentTextChanged.connect(lambda: self._validate_field(widget.objectName()))
+            if widget.isEditable():
+                widget.editTextChanged.connect(lambda: self._validate_field(widget.objectName()))
         elif isinstance(widget, (QDateEdit, QTimeEdit, QDateTimeEdit)):
             widget.dateTimeChanged.connect(lambda: self._validate_field(widget.objectName()))
         elif isinstance(widget, (QSpinBox, QDoubleSpinBox)):
@@ -315,16 +316,28 @@ class ValidatorManager(QObject):
         for error_label in self.error_labels.values():
             error_label.hide()
         self.validationStateChanged.emit(False)
+        
+    def remove_validation_rule(self, field_name: str):
+        """Supprime une règle de validation"""
+        self.validation_rules = [rule for rule in self.validation_rules if rule.field_name != field_name]
 
-class PriceValidator(AbstractValidator):
-    """Validateur pour le prix"""
+    def validate_all(self):
+        """Force la validation de tous les champs"""
+        logger.debug("Validation forcée de tous les champs")
+        is_valid = True
+        
+        # Valider chaque champ
+        for rule in self.validation_rules:
+            try:
+                field_valid, _ = self._validate_field(rule.field_name)
+                if not field_valid:
+                    is_valid = False
+            except Exception as e:
+                logger.error(f"Erreur lors de la validation de {rule.field_name}: {e}")
+                is_valid = False
+        
+        # Émettre le signal de changement d'état
+        self.validationStateChanged.emit(is_valid)
+        return is_valid
+
     
-    def __init__(self, error_message: str = "يجب أن يكون السعر رقمًا موجبًا"):
-        super().__init__(error_message)
-    
-    def validate(self, value: str) -> bool:
-        try:
-            price = float(value)
-            return price > 0
-        except ValueError:
-            return False

@@ -15,9 +15,9 @@ class ClientTableModel(QAbstractTableModel):
         # Charger les clients initiaux
         self.clients = self.data_manager.get_all_clients() or []
         
-        # S'abonner aux changements d'état et aux événements
+        # S'abonner aux changements d'état
         self.state_manager.subscribe('clients', self.on_clients_updated)
-       
+        self.state_manager.subscribe('current_client', self.on_current_client_updated)
         
         self.headers = ["الصفة القانونية","الإسم و اللقب" ]
 
@@ -59,6 +59,23 @@ class ClientTableModel(QAbstractTableModel):
         self.beginResetModel()
         self.clients = clients
         self.endResetModel()
+
+    def update_client(self, updated_client):
+        """Met à jour un client dans le modèle"""
+        for i, client in enumerate(self.clients):
+            if client.id == updated_client.id:
+                self.clients[i] = updated_client
+                # Émettre le signal de modification des données
+                self.dataChanged.emit(
+                    self.index(i, 0),
+                    self.index(i, self.columnCount() - 1)
+                )
+                break
+
+    def on_current_client_updated(self, updated_client):
+        """Gère la mise à jour d'un client individuel"""
+        if updated_client:
+            self.update_client(updated_client)
 
 
 

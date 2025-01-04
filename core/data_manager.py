@@ -4,7 +4,7 @@ from core.data_services import (ClientServices, DocumentServices, SectionService
                                     CategoryServices, BailiffServices, ArchiveBoxServices)
 from .db import Session
 from core import state_manager, event_manager
-from helpers import logger
+from helpers.logger import logger
 
 
 
@@ -139,15 +139,16 @@ class DataManager(QObject):
     
     def update_client(self, client):
         """Met à jour un client existant"""
+        logger.debug("DataManager: Début de la mise à jour du client")
         updated_client = self._with_session(ClientServices.update_client, client)
         if updated_client:
-            # Récupérer la liste complète des clients mise à jour
-            all_clients = self._with_session(ClientServices.get_all_clients)
-            # Mettre à jour l'état avec la nouvelle liste
-            self.state_manager.set_state("clients", all_clients)
-            # Émettre l'événement avec le client mis à jour
-            event_manager.emit('client_updated', updated_client)
+            logger.debug(f"DataManager: Client mis à jour avec succès, ID={updated_client.id}")
+            # Mettre à jour l'état global des clients
+            self._update_clients_state()
+            # Mettre à jour l'état du client courant
+            self.state_manager.set_state("current_client", updated_client)
             return updated_client
+        logger.warning("DataManager: Échec de la mise à jour du client")
         return None
 
     def get_all_councils(self):
