@@ -563,6 +563,7 @@ class ArchiveBoxServices:
         return db.query(ArchiveBox).filter(ArchiveBox.name == name).first()
     @staticmethod
     def get_archive_boxes(db):
+        """Récupère toutes les boîtes d'archives avec leurs dossiers et relations"""
         return db.query(ArchiveBox).options(
         joinedload(ArchiveBox.dossiers)
         .joinedload(Dossier.demandeur),

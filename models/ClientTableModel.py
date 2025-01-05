@@ -27,9 +27,12 @@ class ClientTableModel(QAbstractTableModel):
     def columnCount(self, parent=None):
         return len(self.headers)  # Nombre de colonnes basé sur les en-têtes
 
-    def headerData(self, section, orientation, role=Qt.DisplayRole):
-        if role == Qt.DisplayRole and orientation == Qt.Horizontal:
-            return self.headers[section]
+    def headerData(self, section, orientation, role):
+        if role == Qt.DisplayRole:
+            if orientation == Qt.Vertical:
+                return str(section + 1)  # Numérotation des lignes
+            elif orientation == Qt.Horizontal:
+                return self.headers[section]
         return None
 
     def data(self, index, role=Qt.DisplayRole):
@@ -76,6 +79,24 @@ class ClientTableModel(QAbstractTableModel):
         """Gère la mise à jour d'un client individuel"""
         if updated_client:
             self.update_client(updated_client)
+    
+    def filter_clients(self, text):
+        """Filtre les clients dans la table"""
+        if not text.strip():  # Si le texte est vide
+            # Recharger tous les clients
+            self.clients = self.data_manager.get_all_clients() or []
+        else:
+            # Filtrer les clients existants
+            all_clients = self.data_manager.get_all_clients() or []
+            self.clients = [
+                client for client in all_clients 
+                if text.lower() in client.nom.lower() or 
+                   (client.genre and text.lower() in client.genre.lower())
+            ]
+        
+        # Notifier le changement
+        self.layoutAboutToBeChanged.emit()
+        self.layoutChanged.emit()
 
 
 

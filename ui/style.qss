@@ -1,5 +1,5 @@
 * {
-	font: 11pt "Cairo";
+	font: 12pt ;
 	
 }
 QLineEdit {
@@ -15,7 +15,28 @@ QTextEdit {
     /* Définit la direction droite à gauche */
 }
 QTableView {
-    font-size: 11px;
+    font-size: 12pt;
+}
+
+QTreeView {
+    font-size: 12pt;
+}
+
+/* Style spécifique pour le contenu des tables */
+QTableView::item {
+    font-size: 11pt;
+    padding: 2px;
+}
+
+QTreeView::item {
+    font-size: 11pt;
+    padding: 2px;
+}
+
+/* Style pour les en-têtes des tables */
+QHeaderView::section {
+    font-size: 12pt;
+    padding: 4px;
 }
 
 /*

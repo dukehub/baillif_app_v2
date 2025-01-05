@@ -1,6 +1,6 @@
 from PySide6.QtCore import QAbstractItemModel, Qt, QModelIndex
 from PySide6.QtGui import QIcon
-from core import data_manager
+from core import state_manager, data_manager
 
 
 class TreeNode:
@@ -45,19 +45,30 @@ class ArchiveTreeModel(QAbstractItemModel):
         super().__init__(parent)
         
         self.root_node = TreeNode(["علبة الارشيف","رقم المحضر", "الطالب","المطلوب"])
-        self.load_data()
+        
+        self._archive_boxes = data_manager._update_archive_boxes_state()
         self.box_icon = QIcon(":/icons/icons/binder.png")
         self.document_icon = QIcon(":/icons/icons/folder.png")
+        state_manager.subscribe("archive_boxes", self.on_archive_boxes_updated)
+        self.load_data(self._archive_boxes)
 
-    def load_data(self):
-        archive_boxes = data_manager.get_archive_boxes()
-        for box in archive_boxes:
-            box_node = TreeNode([box.name], is_box=True)
-            for dossier in box.dossiers:
-                dossier_node = TreeNode(["",dossier.code, dossier.demandeur.nom, dossier.defendeur.nom], is_dossier=True)
-                dossier_node.set_hidden_data('full_data', dossier)
-                box_node.add_child(dossier_node)
-            self.root_node.add_child(box_node)
+    def on_archive_boxes_updated(self, archive_boxes):
+        """Appelé quand l'état des boîtes d'archives change"""
+        self.root_node = TreeNode(["علبة الارشيف","رقم المحضر", "الطالب","المطلوب"])
+        self.load_data(archive_boxes)
+
+    def load_data(self, archive_boxes):
+        self.layoutAboutToBeChanged.emit()
+
+        if archive_boxes:
+            for box in archive_boxes:
+                box_node = TreeNode([box.name], is_box=True)
+                for dossier in box.dossiers:
+                    dossier_node = TreeNode(["",dossier.code, dossier.demandeur.nom, dossier.defendeur.nom], is_dossier=True)
+                    dossier_node.set_hidden_data('full_data', dossier)
+                    box_node.add_child(dossier_node)
+                self.root_node.add_child(box_node)
+        self.layoutChanged.emit()
 
     def rowCount(self, parent=QModelIndex()):
         if parent.column() > 0:
@@ -121,8 +132,4 @@ class ArchiveTreeModel(QAbstractItemModel):
             return None
         node = index.internalPointer()
         return node.get_hidden_data(key)
-    def refresh(self):
-        self.beginResetModel()
-        self.root_node = TreeNode(["علبة الارشيف","رقم المحضر", "الطالب","المطلوب"])
-        self.load_data()
-        self.endResetModel()
+  

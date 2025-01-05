@@ -40,6 +40,7 @@ class FormBox(QDialog):
             box.name = self.le_num_box.text().strip()
             box.description = self.le_description.text().strip()
             data_manager.add_archive_box(box)
+        self.close()
 
     def reject(self):
         super().reject()

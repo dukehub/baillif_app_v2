@@ -41,10 +41,12 @@ class DataManager(QObject):
     def _update_dossiers_state(self):
         """Met à jour l'état des dossiers."""
         dossiers = self._with_session(DossierServices.get_all_dossiers)
+        
         logger.info("get_all_dossiers")
         if dossiers is not None:
             self.state_manager.set_state("dossiers", dossiers)
             self.state_manager.set_state("dossiers_client", dossiers)
+            self._update_archive_boxes_state()
             
         return dossiers
     def _update_demandeurs_state(self):
@@ -114,6 +116,7 @@ class DataManager(QObject):
         archive_boxes = self._with_session(ArchiveBoxServices.get_all_archive_boxes)
         if archive_boxes is not None:
             self.state_manager.set_state("archive_boxes", archive_boxes)
+            
         return archive_boxes
     
 
@@ -156,9 +159,10 @@ class DataManager(QObject):
         return None
     
     def _update_archive_boxes_state(self):
-        archive_boxes = self._with_session(ArchiveBoxServices.get_all_archive_boxes)
+        archive_boxes = self.get_archive_boxes()
         if archive_boxes is not None:
             self.state_manager.set_state("archive_boxes", archive_boxes)
+            
         return archive_boxes
 
     def get_all_councils(self):

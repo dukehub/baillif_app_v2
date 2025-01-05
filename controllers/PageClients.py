@@ -54,21 +54,21 @@ class PageClients(QWidget):
         table.setSelectionMode(QAbstractItemView.SingleSelection)
         
         # Masquer la grille
-        table.setShowGrid(False)
+        table.setShowGrid(True)
         
         # Hauteur des lignes
         table.verticalHeader().setDefaultSectionSize(30)
-        table.verticalHeader().hide()  # Cacher les numéros de lignes
+       
 
     def _setup_signals(self):
         """Configure les signaux"""
         self.ui.pb_add.clicked.connect(self.add_client)
         self.ui.pb_edit.clicked.connect(self.edit_client)
         self.ui.pb_delete.clicked.connect(self.delete_client)
-        
+        # filtre la table
+        self.ui.le_find_clients.textChanged.connect(self.filter_clients)
         # Connecter la sélection de la table à l'affichage des détails
         self.ui.tableView_client.selectionModel().selectionChanged.connect(self.on_client_selected)
-        
         # Ajouter le double-clic pour modifier
         self.ui.tableView_client.doubleClicked.connect(self.edit_client)
 
@@ -198,4 +198,8 @@ class PageClients(QWidget):
             # Si c'est le client actuellement sélectionné, mettre à jour l'affichage
             if self.selected_client_id == updated_client.id:
                 self.display_client_info(updated_client)
+    
+    def filter_clients(self, text):
+        """Filtre les clients dans la table"""
+        self.clients_model.filter_clients(text)
 
