@@ -33,6 +33,7 @@ class FormClient(QDialog):
 
     def _setup_validators(self):
         """Configure les règles de validation pour chaque champ"""
+        # Champs obligatoires
         self.validator_manager.add_validation_rule(
             "le_full_name", 
             "error_full_name", 
@@ -48,13 +49,15 @@ class FormClient(QDialog):
             "error_address", 
             [NotEmptyValidator("العنوان إلزامي")]
         )
-        # Email est optionnel mais doit être valide s'il est rempli
+        
+        # Champs optionnels
         self.validator_manager.add_validation_rule(
             "le_mail", 
             "error_mail", 
             [EmailValidator("صيغة البريد الإلكتروني غير صحيحة")],
-            optional=True
+            optional=True  # Rend le champ vraiment optionnel
         )
+       
 
     def _setup_signals(self):
         """Configure les connexions des signaux"""

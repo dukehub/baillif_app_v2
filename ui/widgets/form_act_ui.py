@@ -117,6 +117,7 @@ class Ui_form_act(object):
         icon2 = QIcon()
         icon2.addFile(u":/icons/icons/plus_math.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pb_add_client.setIcon(icon2)
+        self.pb_add_client.setFlat(True)
 
         self.horizontalLayout_2.addWidget(self.pb_add_client)
 
@@ -578,7 +579,8 @@ class Ui_form_act(object):
         self.verticalLayout_3.addItem(self.verticalSpacer)
 
         QWidget.setTabOrder(self.cb_type_rapport, self.cb_client)
-        QWidget.setTabOrder(self.cb_client, self.cb_demandeur)
+        QWidget.setTabOrder(self.cb_client, self.chb_same)
+        QWidget.setTabOrder(self.chb_same, self.cb_demandeur)
         QWidget.setTabOrder(self.cb_demandeur, self.le_address_demandeur)
         QWidget.setTabOrder(self.le_address_demandeur, self.cb_defendeur)
         QWidget.setTabOrder(self.cb_defendeur, self.le_address_defendeur)
@@ -593,9 +595,9 @@ class Ui_form_act(object):
         QWidget.setTabOrder(self.te_audience, self.cb_council_registary)
         QWidget.setTabOrder(self.cb_council_registary, self.cb_tribunal_registary)
         QWidget.setTabOrder(self.cb_tribunal_registary, self.de_registary)
-        QWidget.setTabOrder(self.de_registary, self.tb_save)
+        QWidget.setTabOrder(self.de_registary, self.pb_add_client)
+        QWidget.setTabOrder(self.pb_add_client, self.tb_save)
         QWidget.setTabOrder(self.tb_save, self.tb_close)
-        QWidget.setTabOrder(self.tb_close, self.pb_add_client)
 
         self.retranslateUi(form_act)
 
@@ -603,7 +605,7 @@ class Ui_form_act(object):
     # setupUi
 
     def retranslateUi(self, form_act):
-        form_act.setWindowTitle(QCoreApplication.translate("form_act", u"Dialog", None))
+        form_act.setWindowTitle(QCoreApplication.translate("form_act", u"\u0645\u062d\u0636\u0631 \u062c\u062f\u064a\u062f", None))
         self.tb_save.setText(QCoreApplication.translate("form_act", u"\u062d\u0641\u0638", None))
         self.tb_close.setText(QCoreApplication.translate("form_act", u"\u0625\u0644\u063a\u0627\u0621", None))
         self.label_4.setText(QCoreApplication.translate("form_act", u"\u0645\u062d\u0636\u0631 \u062a\u0643\u0644\u064a\u0641 \u062a\u0633\u0644\u064a\u0645", None))
@@ -635,7 +637,7 @@ class Ui_form_act(object):
         self.cb_tribunal_registary.setPlaceholderText(QCoreApplication.translate("form_act", u"\u062d\u062f\u062f \u0627\u0644\u0645\u062d\u0643\u0645\u0629 ...", None))
         self.label_15.setText(QCoreApplication.translate("form_act", u"\u0628\u062a\u0627\u0631\u064a\u062e", None))
         self.error_date_reg.setText("")
-        self.de_registary.setDisplayFormat(QCoreApplication.translate("form_act", u"d/M/yyyy", None))
+        self.de_registary.setDisplayFormat(QCoreApplication.translate("form_act", u"dd/MM/yyyy", None))
         self.gb_tribunal.setTitle(QCoreApplication.translate("form_act", u"\u0627\u0644\u0645\u062d\u0643\u0645\u0629", None))
         self.label_5.setText(QCoreApplication.translate("form_act", u"\u0645\u062d\u0643\u0645\u0629", None))
         self.error_tribunal.setText("")
@@ -653,7 +655,7 @@ class Ui_form_act(object):
         self.groupBox_3.setTitle(QCoreApplication.translate("form_act", u"\u0627\u0644\u062c\u0644\u0633\u0629", None))
         self.label_44.setText(QCoreApplication.translate("form_act", u"\u0628\u0627\u0631\u064a\u062e \u0627\u0644\u062c\u0644\u0633\u0629", None))
         self.error_date_audience.setText("")
-        self.de_audience.setDisplayFormat(QCoreApplication.translate("form_act", u"d/M/yyyy", None))
+        self.de_audience.setDisplayFormat(QCoreApplication.translate("form_act", u"dd/MM/yyyy", None))
         self.label_43.setText(QCoreApplication.translate("form_act", u"\u0642\u0636\u064a\u0629 \u0631\u0642\u0645", None))
         self.error_case.setText("")
         self.label_42.setText(QCoreApplication.translate("form_act", u"\u0627\u0644\u0642\u0627\u0639\u0629", None))

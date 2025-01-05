@@ -210,3 +210,47 @@ QToolTip {
 #gb_infos {
     max-height: 200px;
 }
+
+/*= Style for settings with icon and text START
+  ==================================================== */
+#frame_settings {
+	background-color: #e5e7eb
+}
+
+#frame_settings QPushButton{
+border: none;
+width: 50px;
+
+}
+
+#frame_settings {
+		background-color: #1a2e05;
+	}
+
+/* style for QPushButton */
+#frame_settings QPushButton {
+	border:none;
+	
+	text-align: left;
+	padding: 10px 10px 10px 20px;
+	color: #DFE2E7;
+}
+
+#frame_settings QPushButton:hover {
+	background-color: #DFE2E7;
+	color: #1a2e05;
+	font-weight: bold;
+	
+}
+
+#frame_settings QPushButton:checked {
+	background-color: #DFE2E7;
+	color: #1a2e05;
+	font-weight: bold;
+}
+
+
+
+
+/*= END
+  ==================================================== */

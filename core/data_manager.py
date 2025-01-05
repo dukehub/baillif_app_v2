@@ -154,6 +154,12 @@ class DataManager(QObject):
             return updated_client
         logger.warning("DataManager: Échec de la mise à jour du client")
         return None
+    
+    def _update_archive_boxes_state(self):
+        archive_boxes = self._with_session(ArchiveBoxServices.get_all_archive_boxes)
+        if archive_boxes is not None:
+            self.state_manager.set_state("archive_boxes", archive_boxes)
+        return archive_boxes
 
     def get_all_councils(self):
         return self._with_session(CouncilServices.get_all_councils)

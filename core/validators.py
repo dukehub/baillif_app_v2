@@ -205,34 +205,39 @@ class ValidatorManager(QObject):
             # Ajouter le champ à l'ensemble des champs validés
             self.validated_fields.add(field_name)
 
-            # Si le champ est optionnel et vide -> toujours valide et on efface l'erreur
-            if rule.optional and (not value or str(value).strip() == ""):
-                self._clear_error(widget)
-                all_fields_valid = self._check_all_fields_validity()
-                self.validationStateChanged.emit(all_fields_valid)
-                return True, []
+            # Pour les champs optionnels
+            if rule.optional:
+                # Si le champ est vide, c'est valide
+                if not value or str(value).strip() == "":
+                    self._clear_error(widget)
+                    all_fields_valid = self._check_all_fields_validity()
+                    self.validationStateChanged.emit(all_fields_valid)
+                    return True, []
+                # Si le champ a une valeur, il doit être valide
+                for validator in rule.validators:
+                    if not validator.validate(value):
+                        error_messages.append(validator.error_message)
+                
+                if error_messages:
+                    self._show_error(widget, "\n".join(error_messages))
+                    # Émettre l'état invalide pour désactiver le bouton save
+                    self.validationStateChanged.emit(False)
+                    return False, error_messages
+                else:
+                    self._clear_error(widget)
 
-            # Valider le contenu selon les règles
+            # Pour les champs obligatoires
             for validator in rule.validators:
                 if not validator.validate(value):
                     error_messages.append(validator.error_message)
 
             if error_messages:
-                if rule.optional:
-                    self._show_warning(widget, "\n".join(error_messages))
-                else:
-                    self._show_error(widget, "\n".join(error_messages))
+                self._show_error(widget, "\n".join(error_messages))
             else:
                 self._clear_error(widget)
 
-            # Vérifier si tous les champs sont valides
             all_fields_valid = self._check_all_fields_validity()
             self.validationStateChanged.emit(all_fields_valid)
-            
-            # Pour un champ optionnel, on retourne toujours True même s'il y a des erreurs
-            if rule.optional:
-                return True, error_messages
-                
             return not bool(error_messages), error_messages
 
         except AttributeError as e:
@@ -257,7 +262,18 @@ class ValidatorManager(QObject):
                 widget = getattr(self.ui, validation_rule.field_name)
                 value = FieldValueGetter.get_value(widget)
                 
-                # Vérifier chaque validateur pour ce champ
+                # Pour les champs optionnels
+                if validation_rule.optional:
+                    # Si le champ est vide, on passe au suivant
+                    if not value or str(value).strip() == "":
+                        continue
+                    # Si le champ a une valeur, on vérifie sa validité
+                    for validator in validation_rule.validators:
+                        if not validator.validate(value):
+                            return False
+                    continue
+                    
+                # Pour les champs obligatoires
                 for validator in validation_rule.validators:
                     if not validator.validate(value):
                         return False

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>محضر جديد</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -183,6 +183,9 @@
              <property name="icon">
               <iconset resource="../ui.resources.qrc">
                <normaloff>:/icons/icons/plus_math.png</normaloff>:/icons/icons/plus_math.png</iconset>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -513,7 +516,7 @@
               </sizepolicy>
              </property>
              <property name="displayFormat">
-              <string>d/M/yyyy</string>
+              <string>dd/MM/yyyy</string>
              </property>
              <property name="calendarPopup">
               <bool>true</bool>
@@ -752,7 +755,7 @@
               </sizepolicy>
              </property>
              <property name="displayFormat">
-              <string>d/M/yyyy</string>
+              <string>dd/MM/yyyy</string>
              </property>
              <property name="calendarPopup">
               <bool>true</bool>
@@ -886,6 +889,7 @@
  <tabstops>
   <tabstop>cb_type_rapport</tabstop>
   <tabstop>cb_client</tabstop>
+  <tabstop>chb_same</tabstop>
   <tabstop>cb_demandeur</tabstop>
   <tabstop>le_address_demandeur</tabstop>
   <tabstop>cb_defendeur</tabstop>
@@ -901,9 +905,9 @@
   <tabstop>cb_council_registary</tabstop>
   <tabstop>cb_tribunal_registary</tabstop>
   <tabstop>de_registary</tabstop>
+  <tabstop>pb_add_client</tabstop>
   <tabstop>tb_save</tabstop>
   <tabstop>tb_close</tabstop>
-  <tabstop>pb_add_client</tabstop>
  </tabstops>
  <resources>
   <include location="../ui.resources.qrc"/>

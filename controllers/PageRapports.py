@@ -19,6 +19,7 @@ class PageRapports(QWidget):
         super().__init__()
         self.ui = Ui_page_rapports()
         self.ui.setupUi(self)
+        self.print_manager = PrintManager()
         
         self.dossiers_model = DossiersTableModel()
         self.ui.tableView_dossiers.setModel(self.dossiers_model)

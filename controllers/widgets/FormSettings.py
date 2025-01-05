@@ -6,14 +6,14 @@ class FormSettings(QDialog):
     def __init__(self):
         super().__init__()
         self.ui = Ui_SettingsDialog()
-        self.data_manager = data_manager
+        
        
         self.ui.setupUi(self)
         self.load_settings()
         self.ui.stackedWidget.setCurrentWidget(self.ui.page_bailiff)
-        self.ui.tb_bailiff_info.setChecked(True)
-        self.ui.tb_bailiff_info.clicked.connect(self.show_bailiff_info)
-        self.ui.tb_users.clicked.connect(self.show_users)
+        self.ui.pb_bailiff_info.setChecked(True)
+        self.ui.pb_bailiff_info.clicked.connect(self.show_bailiff_info)
+        self.ui.pb_users.clicked.connect(self.show_users)
         
        
 
@@ -28,7 +28,7 @@ class FormSettings(QDialog):
     
 
     def save_settings(self):
-        bailiff : Bailiff = self.data_manager.get_bailiff()
+        bailiff : Bailiff = data_manager.get_bailiff()
         if bailiff:
             bailiff.nom = self.ui.le_name.text()
             bailiff.register_in = self.ui.le_register_in.text()
@@ -36,7 +36,7 @@ class FormSettings(QDialog):
             bailiff.phone = self.ui.le_phone.text()
             bailiff.mobile = self.ui.le_mobile.text()
             bailiff.email = self.ui.le_email.text()
-            self.data_manager.update_bailiff(bailiff)
+            data_manager.update_bailiff(bailiff)
         else:
             bailiff = Bailiff(
                 nom=self.ui.le_name.text(),
@@ -46,13 +46,14 @@ class FormSettings(QDialog):
                 mobile=self.ui.le_mobile.text(),
                 email=self.ui.le_email.text(),
             )
-            self.data_manager.add_bailiff(bailiff)
+            data_manager.add_bailiff(bailiff)
+        self.close()
     def cancel_settings(self):
         self.close()
 
 
     def load_settings(self):
-        builiff : Bailiff = self.data_manager.get_bailiff()
+        builiff : Bailiff = data_manager.get_bailiff()
         if builiff:
             self.ui.le_name.setText(builiff.nom)
             self.ui.le_register_in.setText(builiff.register_in)
