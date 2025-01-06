@@ -132,4 +132,49 @@ class ArchiveTreeModel(QAbstractItemModel):
             return None
         node = index.internalPointer()
         return node.get_hidden_data(key)
+    
+    def filter_archives(self, text, tree_view=None):
+        """Filtre les archives selon le texte de recherche"""
+        self.layoutAboutToBeChanged.emit()
+        
+        # Réinitialiser le root node
+        self.root_node = TreeNode(["علبة الارشيف","رقم المحضر", "الطالب","المطلوب"])
+        
+        if not text.strip():  # Si le texte est vide
+            # Recharger toutes les données
+            self.load_data(self._archive_boxes)
+        else:
+            # Filtrer les données
+            text = text.lower()
+            for box in self._archive_boxes:
+                box_matches = text in box.name.lower()
+                matching_dossiers = []
+                
+                # Vérifier les dossiers de cette boîte
+                for dossier in box.dossiers:
+                    if (text in dossier.code.lower() or 
+                        text in dossier.demandeur.nom.lower() or 
+                        text in dossier.defendeur.nom.lower()):
+                        matching_dossiers.append(dossier)
+                
+                # Si la boîte ou un de ses dossiers correspond au filtre
+                if box_matches or matching_dossiers:
+                    box_node = TreeNode([box.name], is_box=True)
+                    # Ajouter uniquement les dossiers correspondants
+                    for dossier in (matching_dossiers if not box_matches else box.dossiers):
+                        dossier_node = TreeNode(
+                            ["", dossier.code, dossier.demandeur.nom, dossier.defendeur.nom],
+                            is_dossier=True
+                        )
+                        dossier_node.set_hidden_data('full_data', dossier)
+                        box_node.add_child(dossier_node)
+                    self.root_node.add_child(box_node)
+        
+        self.layoutChanged.emit()
+        
+        # Expandre tous les éléments si on a un filtre
+        if tree_view and text.strip():
+            for row in range(self.rowCount()):
+                index = self.index(row, 0, QModelIndex())
+                tree_view.expand(index)
   

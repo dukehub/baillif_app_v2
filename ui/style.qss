@@ -275,3 +275,37 @@ width: 50px;
 
 /*= END
   ==================================================== */
+
+/* Style pour les widgets du tableau de bord */
+QFrame[objectName^="clients"],
+QFrame[objectName^="dossiers"],
+QFrame[objectName^="archives"],
+QFrame[objectName^="notifications"] {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+QFrame[objectName^="clients"]:hover,
+QFrame[objectName^="dossiers"]:hover,
+QFrame[objectName^="archives"]:hover,
+QFrame[objectName^="notifications"]:hover {
+    background-color: #f8f9fa;
+    border: 1px solid #1a2e05;
+}
+
+QFrame[objectName^="clients"] QLabel,
+QFrame[objectName^="dossiers"] QLabel,
+QFrame[objectName^="archives"] QLabel,
+QFrame[objectName^="notifications"] QLabel {
+    color: #1a2e05;
+}
+
+QFrame[objectName^="clients"] QLabel[objectName$="_value"],
+QFrame[objectName^="dossiers"] QLabel[objectName$="_value"],
+QFrame[objectName^="archives"] QLabel[objectName$="_value"],
+QFrame[objectName^="notifications"] QLabel[objectName$="_value"] {
+    color: #1a2e05;
+    font-size: 24pt;
+    font-weight: bold;
+}

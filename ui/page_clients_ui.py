@@ -15,11 +15,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QAbstractItemView, QApplication, QFrame, QGridLayout,
-    QGroupBox, QHBoxLayout, QHeaderView, QLabel,
-    QLineEdit, QPushButton, QSizePolicy, QSpacerItem,
-    QSpinBox, QSplitter, QTableView, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QFrame,
+    QGridLayout, QGroupBox, QHBoxLayout, QHeaderView,
+    QLabel, QLineEdit, QPushButton, QSizePolicy,
+    QSpacerItem, QSpinBox, QSplitter, QTableView,
+    QVBoxLayout, QWidget)
 import ui.resources_rc
 
 class Ui_page_clients(object):
@@ -69,11 +69,21 @@ class Ui_page_clients(object):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.tableView_client.sizePolicy().hasHeightForWidth())
         self.tableView_client.setSizePolicy(sizePolicy2)
+        self.tableView_client.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
         self.tableView_client.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self.tableView_client.setAlternatingRowColors(True)
         self.tableView_client.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
         self.tableView_client.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.tableView_client.setTextElideMode(Qt.TextElideMode.ElideNone)
         self.tableView_client.setSortingEnabled(True)
+        self.tableView_client.horizontalHeader().setCascadingSectionResizes(True)
+        self.tableView_client.horizontalHeader().setMinimumSectionSize(100)
+        self.tableView_client.horizontalHeader().setDefaultSectionSize(120)
+        self.tableView_client.horizontalHeader().setProperty(u"showSortIndicator", False)
+        self.tableView_client.horizontalHeader().setStretchLastSection(True)
+        self.tableView_client.verticalHeader().setCascadingSectionResizes(True)
+        self.tableView_client.verticalHeader().setProperty(u"showSortIndicator", False)
+        self.tableView_client.verticalHeader().setStretchLastSection(False)
 
         self.verticalLayout_6.addWidget(self.tableView_client)
 
@@ -89,11 +99,13 @@ class Ui_page_clients(object):
         self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_13 = QHBoxLayout(self.frame_2)
+        self.horizontalLayout_13.setSpacing(2)
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalLayout_13.setContentsMargins(2, 2, 2, 2)
         self.pb_add = QPushButton(self.frame_2)
         self.pb_add.setObjectName(u"pb_add")
-        self.pb_add.setMinimumSize(QSize(150, 24))
-        self.pb_add.setMaximumSize(QSize(300, 32))
+        self.pb_add.setMinimumSize(QSize(150, 0))
+        self.pb_add.setMaximumSize(QSize(16777215, 16777215))
         self.pb_add.setStyleSheet(u"")
         icon = QIcon()
         icon.addFile(u":/icons/icons/add_white.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -104,11 +116,17 @@ class Ui_page_clients(object):
 
         self.pb_edit = QPushButton(self.frame_2)
         self.pb_edit.setObjectName(u"pb_edit")
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icons/edit.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pb_edit.setIcon(icon1)
 
         self.horizontalLayout_13.addWidget(self.pb_edit)
 
         self.pb_delete = QPushButton(self.frame_2)
         self.pb_delete.setObjectName(u"pb_delete")
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icons/trash.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pb_delete.setIcon(icon2)
 
         self.horizontalLayout_13.addWidget(self.pb_delete)
 
@@ -130,7 +148,9 @@ class Ui_page_clients(object):
         self.gb_infos.setMinimumSize(QSize(720, 0))
         self.gb_infos.setFlat(False)
         self.gridLayout = QGridLayout(self.gb_infos)
+        self.gridLayout.setSpacing(2)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(5, 5, 5, 5)
         self.lbl_phone = QLabel(self.gb_infos)
         self.lbl_phone.setObjectName(u"lbl_phone")
 
@@ -176,11 +196,26 @@ class Ui_page_clients(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.le_find_dossiers = QLineEdit(self.groupBox)
         self.le_find_dossiers.setObjectName(u"le_find_dossiers")
+        self.le_find_dossiers.setClearButtonEnabled(True)
 
         self.verticalLayout.addWidget(self.le_find_dossiers)
 
         self.tableView_dossiers = QTableView(self.groupBox)
         self.tableView_dossiers.setObjectName(u"tableView_dossiers")
+        self.tableView_dossiers.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
+        self.tableView_dossiers.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self.tableView_dossiers.setAlternatingRowColors(True)
+        self.tableView_dossiers.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        self.tableView_dossiers.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.tableView_dossiers.setTextElideMode(Qt.TextElideMode.ElideNone)
+        self.tableView_dossiers.setSortingEnabled(True)
+        self.tableView_dossiers.horizontalHeader().setCascadingSectionResizes(True)
+        self.tableView_dossiers.horizontalHeader().setHighlightSections(True)
+        self.tableView_dossiers.horizontalHeader().setProperty(u"showSortIndicator", False)
+        self.tableView_dossiers.horizontalHeader().setStretchLastSection(False)
+        self.tableView_dossiers.verticalHeader().setCascadingSectionResizes(True)
+        self.tableView_dossiers.verticalHeader().setProperty(u"showSortIndicator", False)
+        self.tableView_dossiers.verticalHeader().setStretchLastSection(False)
 
         self.verticalLayout.addWidget(self.tableView_dossiers)
 
@@ -190,6 +225,10 @@ class Ui_page_clients(object):
         self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame_3)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
         self.pushButton = QPushButton(self.frame_3)
         self.pushButton.setObjectName(u"pushButton")
 
@@ -223,10 +262,10 @@ class Ui_page_clients(object):
 
     def retranslateUi(self, page_clients):
         page_clients.setWindowTitle(QCoreApplication.translate("page_clients", u"Form", None))
-        self.le_find_clients.setPlaceholderText("")
+        self.le_find_clients.setPlaceholderText(QCoreApplication.translate("page_clients", u"\u0628\u062d\u062b...", None))
         self.pb_add.setText(QCoreApplication.translate("page_clients", u"\u0625\u0636\u0627\u0641\u0629 \u0639\u0645\u064a\u0644", None))
-        self.pb_edit.setText(QCoreApplication.translate("page_clients", u"PushButton", None))
-        self.pb_delete.setText(QCoreApplication.translate("page_clients", u"PushButton", None))
+        self.pb_edit.setText("")
+        self.pb_delete.setText("")
         self.gb_infos.setTitle(QCoreApplication.translate("page_clients", u"\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644", None))
         self.lbl_phone.setText("")
         self.lbl_full_name.setText("")
@@ -236,6 +275,7 @@ class Ui_page_clients(object):
         self.lbl_email.setText("")
         self.lbl_notes.setText("")
         self.groupBox.setTitle(QCoreApplication.translate("page_clients", u"\u0645\u062d\u0627\u0636\u0631 \u0627\u0644\u0639\u0645\u064a\u0644", None))
+        self.le_find_dossiers.setPlaceholderText(QCoreApplication.translate("page_clients", u"\u0628\u062d\u062b...", None))
         self.pushButton.setText(QCoreApplication.translate("page_clients", u"PushButton", None))
         self.pushButton_2.setText(QCoreApplication.translate("page_clients", u"PushButton", None))
     # retranslateUi

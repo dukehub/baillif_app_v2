@@ -25,8 +25,10 @@ class PageClients(QWidget):
         
         self.dossiers_client_model = DossiersClientTableModel()
         self.ui.tableView_dossiers.setModel(self.dossiers_client_model)
+        self.dossiers_client_model.dataChangedSignal.connect(self.on_dossiers_data_changed)
         # Configuration de la table
-        self._setup_table()
+        
+     
         self._setup_signals()
         
         # Initialiser les labels vides
@@ -40,24 +42,7 @@ class PageClients(QWidget):
         self.state_manager = state_manager
         self.state_manager.subscribe("current_client", self.on_current_client_changed)
 
-    def _setup_table(self):
-        """Configure l'apparence et le comportement de la table"""
-        table = self.ui.tableView_client
-        
-        # Ajuster les colonnes au contenu
-        table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeToContents)
-        table.horizontalHeader().setStretchLastSection(True)
-        
-        # Style de la table
-        table.setAlternatingRowColors(True)
-        table.setSelectionBehavior(QAbstractItemView.SelectRows)
-        table.setSelectionMode(QAbstractItemView.SingleSelection)
-        
-        # Masquer la grille
-        table.setShowGrid(True)
-        
-        # Hauteur des lignes
-        table.verticalHeader().setDefaultSectionSize(30)
+   
        
 
     def _setup_signals(self):
@@ -67,6 +52,7 @@ class PageClients(QWidget):
         self.ui.pb_delete.clicked.connect(self.delete_client)
         # filtre la table
         self.ui.le_find_clients.textChanged.connect(self.filter_clients)
+        self.ui.le_find_dossiers.textChanged.connect(self.filter_dossiers)
         # Connecter la sélection de la table à l'affichage des détails
         self.ui.tableView_client.selectionModel().selectionChanged.connect(self.on_client_selected)
         # Ajouter le double-clic pour modifier
@@ -126,7 +112,7 @@ class PageClients(QWidget):
 
     def add_client(self):
         self.form_client = FormClient()
-        self.form_client.exec_()
+        self.form_client.exec()
 
     def edit_client(self):
         """Édite le client sélectionné"""
@@ -146,7 +132,7 @@ class PageClients(QWidget):
         
         # Ouvrir le formulaire d'édition avec le client sélectionné
         self.form_client = FormClient(selected_client)
-        self.form_client.exec_()
+        self.form_client.exec()
 
     def delete_client(self):
         """Supprime le client sélectionné"""
@@ -202,4 +188,12 @@ class PageClients(QWidget):
     def filter_clients(self, text):
         """Filtre les clients dans la table"""
         self.clients_model.filter_clients(text)
+    
+    def on_dossiers_data_changed(self):
+        """Appelé quand les données des dossiers changent"""
+        self.ui.tableView_dossiers.resizeColumnsToContents()
+        self.ui.tableView_dossiers.resizeRowsToContents()
+    def filter_dossiers(self, text):
+        """Filtre les dossiers dans la table"""
+        self.dossiers_client_model.filter_dossiers(text)
 

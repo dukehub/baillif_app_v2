@@ -34,13 +34,15 @@ class Ui_page_archives(object):
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame)
+        self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.tb_add_box = QToolButton(self.frame)
         self.tb_add_box.setObjectName(u"tb_add_box")
         icon = QIcon()
         icon.addFile(u":/icons/icons/binder.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.tb_add_box.setIcon(icon)
-        self.tb_add_box.setIconSize(QSize(32, 32))
+        self.tb_add_box.setIconSize(QSize(24, 24))
         self.tb_add_box.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         self.tb_add_box.setAutoRaise(True)
 
@@ -51,7 +53,7 @@ class Ui_page_archives(object):
         icon1 = QIcon()
         icon1.addFile(u":/icons/icons/create_archive.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.tb_add_archive.setIcon(icon1)
-        self.tb_add_archive.setIconSize(QSize(32, 32))
+        self.tb_add_archive.setIconSize(QSize(24, 24))
         self.tb_add_archive.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         self.tb_add_archive.setAutoRaise(True)
 
@@ -63,31 +65,19 @@ class Ui_page_archives(object):
         icon2 = QIcon()
         icon2.addFile(u":/icons/icons/delete_archive.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.tb_delete_archive.setIcon(icon2)
-        self.tb_delete_archive.setIconSize(QSize(32, 32))
+        self.tb_delete_archive.setIconSize(QSize(24, 24))
         self.tb_delete_archive.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         self.tb_delete_archive.setAutoRaise(True)
 
         self.horizontalLayout.addWidget(self.tb_delete_archive)
 
-        self.tb_scan = QToolButton(self.frame)
-        self.tb_scan.setObjectName(u"tb_scan")
-        self.tb_scan.setEnabled(False)
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icons/rescan_document.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.tb_scan.setIcon(icon3)
-        self.tb_scan.setIconSize(QSize(32, 32))
-        self.tb_scan.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
-        self.tb_scan.setAutoRaise(True)
-
-        self.horizontalLayout.addWidget(self.tb_scan)
-
         self.tb_print = QToolButton(self.frame)
         self.tb_print.setObjectName(u"tb_print")
         self.tb_print.setEnabled(False)
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/print.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.tb_print.setIcon(icon4)
-        self.tb_print.setIconSize(QSize(32, 32))
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icons/print.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.tb_print.setIcon(icon3)
+        self.tb_print.setIconSize(QSize(24, 24))
         self.tb_print.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         self.tb_print.setAutoRaise(True)
 
@@ -121,7 +111,7 @@ class Ui_page_archives(object):
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.frame_2.sizePolicy().hasHeightForWidth())
         self.frame_2.setSizePolicy(sizePolicy1)
-        self.frame_2.setMinimumSize(QSize(300, 0))
+        self.frame_2.setMinimumSize(QSize(450, 0))
         self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout = QVBoxLayout(self.frame_2)
@@ -135,6 +125,7 @@ class Ui_page_archives(object):
 
         self.le_filter = QLineEdit(self.frame_2)
         self.le_filter.setObjectName(u"le_filter")
+        self.le_filter.setClearButtonEnabled(True)
 
         self.gridLayout.addWidget(self.le_filter, 0, 1, 1, 1)
 
@@ -151,7 +142,7 @@ class Ui_page_archives(object):
         self.tree_view_pdf.setIconSize(QSize(24, 24))
         self.tree_view_pdf.setIndentation(20)
         self.tree_view_pdf.setAnimated(True)
-        self.tree_view_pdf.setWordWrap(False)
+        self.tree_view_pdf.setWordWrap(True)
 
         self.verticalLayout.addWidget(self.tree_view_pdf)
 
@@ -181,8 +172,8 @@ class Ui_page_archives(object):
         self.tb_add_box.setText(QCoreApplication.translate("page_archives", u"\u0625\u0636\u0627\u0641\u0629 \u0639\u0644\u0628\u0629", None))
         self.tb_add_archive.setText(QCoreApplication.translate("page_archives", u"\u0623\u0631\u0634\u064a\u0641 \u062c\u062f\u064a\u062f", None))
         self.tb_delete_archive.setText(QCoreApplication.translate("page_archives", u"\u062d\u0630\u0641 \u0627\u0644\u0623\u0631\u0634\u064a\u0641", None))
-        self.tb_scan.setText(QCoreApplication.translate("page_archives", u"\u0645\u0633\u062d", None))
         self.tb_print.setText(QCoreApplication.translate("page_archives", u"\u0637\u0628\u0627\u0639\u0629", None))
         self.label.setText(QCoreApplication.translate("page_archives", u"\u0628\u062d\u062b", None))
+        self.le_filter.setPlaceholderText(QCoreApplication.translate("page_archives", u"\u0628\u062d\u062b...", None))
     # retranslateUi
 

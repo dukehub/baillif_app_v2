@@ -258,7 +258,14 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="le_filter"/>
+             <widget class="QLineEdit" name="le_filter">
+              <property name="placeholderText">
+               <string>بحث...</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -272,7 +279,7 @@
             </sizepolicy>
            </property>
            <property name="sizeAdjustPolicy">
-            <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContentsOnFirstShow</enum>
+            <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
            </property>
            <property name="editTriggers">
             <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
@@ -289,6 +296,9 @@
            <property name="sortingEnabled">
             <bool>true</bool>
            </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
           </widget>
          </item>
         </layout>

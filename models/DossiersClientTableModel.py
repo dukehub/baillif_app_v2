@@ -39,7 +39,7 @@ class DossiersClientTableModel(QAbstractTableModel):
         return len(self.dossiers)
     
     def columnCount(self, parent = None):
-        return 10
+        return 8
     
     def data(self, index, role = Qt.DisplayRole):
         if not index.isValid() or index.row() >= len(self.dossiers):
@@ -57,15 +57,14 @@ class DossiersClientTableModel(QAbstractTableModel):
                 3: dossier.defendeur.nom,
                 4: dossier.date_creation.strftime("%d-%m-%Y") if dossier.date_creation else "N/A",
                 5: dossier.date_modification.strftime("%d-%m-%Y") if dossier.date_modification else "N/A",
-                6: dossier.date_reminder.strftime("%d-%m-%Y") if dossier.date_reminder else "N/A",
              
             }.get(column)
 
-        elif role == Qt.DecorationRole and column in (7, 8, 9):
+        elif role == Qt.DecorationRole and column in (6,7):
             value = (
-                dossier.paye_status if column == 7 else
-                dossier.valid_status if column == 8 else
-                dossier.print_status
+                dossier.paye_status if column == 6 else
+                dossier.valid_status 
+                
             )
             return self._true_icon if value else self._false_icon
 
@@ -93,17 +92,13 @@ class DossiersClientTableModel(QAbstractTableModel):
         elif column == 5:
             # Exemple : Tri par la date de modification
             self.dossiers.sort(key=lambda dossier: dossier.date_modification or "", reverse=(order == Qt.DescendingOrder))
-        elif column == 6:
-            # Exemple : Tri par la date de rappel
-            self.dossiers.sort(key=lambda dossier: dossier.date_reminder or "", reverse=(order == Qt.DescendingOrder))
-        elif column in (7, 8, 9):
+        elif column in (6, 7):
             # Exemple : Tri par les colonnes booléennes
-            if column == 7:
+            if column == 6:
                 self.dossiers.sort(key=lambda dossier: dossier.paye_status, reverse=(order == Qt.DescendingOrder))
-            elif column == 8:
+            elif column == 7:
                 self.dossiers.sort(key=lambda dossier: dossier.valid_status, reverse=(order == Qt.DescendingOrder))
-            elif column == 9:
-                self.dossiers.sort(key=lambda dossier: dossier.print_status, reverse=(order == Qt.DescendingOrder))
+       
 
         # Après le tri, émettez le signal de mise à jour des données
         self.layoutChanged.emit()
@@ -112,9 +107,10 @@ class DossiersClientTableModel(QAbstractTableModel):
     def headerData(self, section: int, orientation: Qt.Orientation, role: int = Qt.DisplayRole) -> Any:
         if role != Qt.DisplayRole:
             return None
-        
+        if orientation == Qt.Vertical:
+            return section + 1
         if orientation == Qt.Horizontal:
-            headers = ["رقم المحضر","نوع المحضر","الطالب","المطلوب","التاريخ","تاريخ التعديل","تاريخ التذكير","تم الدفع","تم التبليغ","تم الطباعة"]
+            headers = ["رقم المحضر","نوع المحضر","الطالب","المطلوب","التاريخ","تاريخ التعديل","تم الدفع","تم التبليغ",]
             return headers[section]
     
     
@@ -123,5 +119,19 @@ class DossiersClientTableModel(QAbstractTableModel):
             self.beginResetModel()
             self.dossiers = new_data
             self.endResetModel()
+            
             self.dataChangedSignal.emit()
+    
+    def filter_dossiers(self, text):
+        if not text.strip():  # Si le texte est vide
+            # Recharger tous les dossiers
+            self.dossiers = data_manager.get_dossiers_client(self.current_client_id) or []
+        else:
+            # Filtrer les dossiers existants
+            all_dossiers =  data_manager.get_dossiers_client(self.current_client_id) or []
+            self.dossiers = [dossier for dossier in all_dossiers if text.lower() in dossier.code.lower() or text.lower() in dossier.document.titre.lower() or text.lower() in dossier.demandeur.nom.lower() or text.lower() in dossier.defendeur.nom.lower()]
+         # Notifier le changement
+        self.layoutAboutToBeChanged.emit()
+        self.layoutChanged.emit()
+
 

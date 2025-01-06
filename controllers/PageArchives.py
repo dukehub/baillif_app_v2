@@ -41,10 +41,11 @@ class PageArchives(QWidget):
         self.ui.tree_view_pdf.header().setSectionResizeMode(0, QHeaderView.ResizeToContents)
         self.ui.tree_view_pdf.header().setSectionResizeMode(1, QHeaderView.ResizeToContents)
         
+        
         self.ui.tree_view_pdf.selectionModel().selectionChanged.connect(self.update_pdf_view)
         self.ui.tb_print.clicked.connect(self.print)
         self.ui.tb_delete_archive.clicked.connect(self.delete_archive)
-
+        self.ui.le_filter.textChanged.connect(self.filter_archives)
     def add_archive(self):
         """
         Affiche une bo te de dialogue pour l'ajout d'un archive.
@@ -112,3 +113,8 @@ class PageArchives(QWidget):
     def print(self):
         path = os.path.join(archive_dir,self.dossier.path_file)
         self.print_manager.print_with_dialog( path)
+    
+    def filter_archives(self):
+        """Filtre les archives selon le texte de recherche"""
+        search_text = self.ui.le_filter.text()
+        self.archive_model.filter_archives(search_text, self.ui.tree_view_pdf)

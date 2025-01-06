@@ -144,6 +144,7 @@ class Ui_page_rapports(object):
 
         self.le_filter = QLineEdit(self.frame_8)
         self.le_filter.setObjectName(u"le_filter")
+        self.le_filter.setClearButtonEnabled(True)
 
         self.horizontalLayout_5.addWidget(self.le_filter)
 
@@ -157,12 +158,13 @@ class Ui_page_rapports(object):
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.tableView_dossiers.sizePolicy().hasHeightForWidth())
         self.tableView_dossiers.setSizePolicy(sizePolicy3)
-        self.tableView_dossiers.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContentsOnFirstShow)
+        self.tableView_dossiers.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
         self.tableView_dossiers.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self.tableView_dossiers.setAlternatingRowColors(True)
         self.tableView_dossiers.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
         self.tableView_dossiers.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self.tableView_dossiers.setSortingEnabled(True)
+        self.tableView_dossiers.horizontalHeader().setCascadingSectionResizes(False)
 
         self.verticalLayout_4.addWidget(self.tableView_dossiers)
 
@@ -189,5 +191,6 @@ class Ui_page_rapports(object):
         self.tb_preview.setText(QCoreApplication.translate("page_rapports", u"\u062a\u062f\u0642\u064a\u0642", None))
         self.tb_print.setText(QCoreApplication.translate("page_rapports", u"\u0637\u0628\u0627\u0639\u0629", None))
         self.label_6.setText(QCoreApplication.translate("page_rapports", u"\u0628\u062d\u062b", None))
+        self.le_filter.setPlaceholderText(QCoreApplication.translate("page_rapports", u"\u0628\u062d\u062b...", None))
     # retranslateUi
 
