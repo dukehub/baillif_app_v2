@@ -5241,3 +5241,10 @@
 2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
 2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
 2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 14:25:01 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 14:25:01 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\archives
+2025-01-07 14:25:01 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\hp\PyProjects\baillif_app_v2\logs
+2025-01-07 14:25:01 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 14:25:01 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 14:25:01 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 14:25:02 - bailiff_app - INFO - get_all_dossiers
