@@ -32,8 +32,8 @@ if __name__ == "__main__":
     screen_geometry = screen.availableGeometry()
     
     # Calculer la taille de la fenêtre (80% de l'écran)
-    window_width = int(screen_geometry.width() * 0.8)
-    window_height = int(screen_geometry.height() * 0.8)
+    window_width = int(screen_geometry.width() )
+    window_height = int(screen_geometry.height() )
     
     # Calculer la position pour centrer la fenêtre
     x = (screen_geometry.width() - window_width) // 2

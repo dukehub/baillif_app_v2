@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1692, 960)
+        MainWindow.resize(1028, 618)
         MainWindow.setStyleSheet(u"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -59,7 +59,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 238, 935))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 238, 593))
         sizePolicy.setHeightForWidth(self.scrollAreaWidgetContents.sizePolicy().hasHeightForWidth())
         self.scrollAreaWidgetContents.setSizePolicy(sizePolicy)
         self.verticalLayout_4 = QVBoxLayout(self.scrollAreaWidgetContents)
@@ -68,6 +68,11 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.widget_3 = QWidget(self.scrollAreaWidgetContents)
         self.widget_3.setObjectName(u"widget_3")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.widget_3.sizePolicy().hasHeightForWidth())
+        self.widget_3.setSizePolicy(sizePolicy2)
         self.widget_3.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.horizontalLayout_3 = QHBoxLayout(self.widget_3)
         self.horizontalLayout_3.setSpacing(0)
@@ -75,9 +80,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.label_2 = QLabel(self.widget_3)
         self.label_2.setObjectName(u"label_2")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
         self.label_2.setSizePolicy(sizePolicy2)
         font = QFont()
@@ -88,7 +90,7 @@ class Ui_MainWindow(object):
 
         self.label = QLabel(self.widget_3)
         self.label.setObjectName(u"label")
-        self.label.setMinimumSize(QSize(120, 100))
+        self.label.setMinimumSize(QSize(0, 0))
         self.label.setMaximumSize(QSize(120, 100))
         self.label.setPixmap(QPixmap(u":/icons/icons/bailiff_logo.png"))
         self.label.setScaledContents(True)
@@ -273,17 +275,19 @@ class Ui_MainWindow(object):
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
         self.widget.setSizePolicy(sizePolicy3)
-        self.verticalLayout_5 = QVBoxLayout(self.widget)
-        self.verticalLayout_5.setSpacing(0)
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.widget_2 = QWidget(self.widget)
-        self.widget_2.setObjectName(u"widget_2")
-        self.horizontalLayout_5 = QHBoxLayout(self.widget_2)
-        self.horizontalLayout_5.setSpacing(0)
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.pb_menu = QPushButton(self.widget_2)
+        self.verticalLayout = QVBoxLayout(self.widget)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.frame = QFrame(self.widget)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.pb_menu = QPushButton(self.frame)
         self.pb_menu.setObjectName(u"pb_menu")
         icon12 = QIcon()
         icon12.addFile(u":/icons/icons/squared_menu.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -291,19 +295,19 @@ class Ui_MainWindow(object):
         self.pb_menu.setIconSize(QSize(20, 20))
         self.pb_menu.setCheckable(True)
 
-        self.horizontalLayout_5.addWidget(self.pb_menu)
+        self.horizontalLayout.addWidget(self.pb_menu)
 
-        self.lbl_page_title = QLabel(self.widget_2)
+        self.lbl_page_title = QLabel(self.frame)
         self.lbl_page_title.setObjectName(u"lbl_page_title")
         self.lbl_page_title.setFont(font1)
 
-        self.horizontalLayout_5.addWidget(self.lbl_page_title)
+        self.horizontalLayout.addWidget(self.lbl_page_title)
 
         self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.horizontalLayout_5.addItem(self.horizontalSpacer_2)
+        self.horizontalLayout.addItem(self.horizontalSpacer_2)
 
-        self.pb_settings = QPushButton(self.widget_2)
+        self.pb_settings = QPushButton(self.frame)
         self.pb_settings.setObjectName(u"pb_settings")
         icon13 = QIcon()
         icon13.addFile(u":/icons/icons/gears.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -311,9 +315,9 @@ class Ui_MainWindow(object):
         self.pb_settings.setIconSize(QSize(20, 20))
         self.pb_settings.setFlat(True)
 
-        self.horizontalLayout_5.addWidget(self.pb_settings)
+        self.horizontalLayout.addWidget(self.pb_settings)
 
-        self.pb_notification = QPushButton(self.widget_2)
+        self.pb_notification = QPushButton(self.frame)
         self.pb_notification.setObjectName(u"pb_notification")
         icon14 = QIcon()
         icon14.addFile(u":/icons/icons/notification.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -321,9 +325,9 @@ class Ui_MainWindow(object):
         self.pb_notification.setIconSize(QSize(20, 20))
         self.pb_notification.setFlat(True)
 
-        self.horizontalLayout_5.addWidget(self.pb_notification)
+        self.horizontalLayout.addWidget(self.pb_notification)
 
-        self.pb_infos = QPushButton(self.widget_2)
+        self.pb_infos = QPushButton(self.frame)
         self.pb_infos.setObjectName(u"pb_infos")
         icon15 = QIcon()
         icon15.addFile(u":/icons/icons/info.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -331,10 +335,19 @@ class Ui_MainWindow(object):
         self.pb_infos.setIconSize(QSize(20, 20))
         self.pb_infos.setFlat(True)
 
-        self.horizontalLayout_5.addWidget(self.pb_infos)
+        self.horizontalLayout.addWidget(self.pb_infos)
 
 
-        self.verticalLayout_5.addWidget(self.widget_2)
+        self.verticalLayout.addWidget(self.frame)
+
+        self.widget_2 = QWidget(self.widget)
+        self.widget_2.setObjectName(u"widget_2")
+        self.horizontalLayout_5 = QHBoxLayout(self.widget_2)
+        self.horizontalLayout_5.setSpacing(0)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
+
+        self.verticalLayout.addWidget(self.widget_2)
 
         self.stackedWidget = QStackedWidget(self.widget)
         self.stackedWidget.setObjectName(u"stackedWidget")
@@ -342,7 +355,7 @@ class Ui_MainWindow(object):
         self.page.setObjectName(u"page")
         self.stackedWidget.addWidget(self.page)
 
-        self.verticalLayout_5.addWidget(self.stackedWidget)
+        self.verticalLayout.addWidget(self.stackedWidget)
 
 
         self.horizontalLayout_4.addWidget(self.widget)
@@ -378,7 +391,7 @@ class Ui_MainWindow(object):
         self.pb_control.setText(QCoreApplication.translate("MainWindow", u"\u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a", None))
         self.pb_exit.setText(QCoreApplication.translate("MainWindow", u"\u0627\u0644\u062e\u0631\u0648\u062c", None))
         self.pb_menu.setText("")
-        self.lbl_page_title.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.lbl_page_title.setText("")
         self.pb_settings.setText("")
         self.pb_notification.setText("")
         self.pb_infos.setText("")

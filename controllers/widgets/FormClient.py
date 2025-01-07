@@ -90,6 +90,7 @@ class FormClient(QDialog):
             self.ui.cb_legal_status.setCurrentText(self.client.genre)
             self.ui.le_address.setText(self.client.adresse)
             self.ui.le_phone.setText(self.client.phone)
+            self.ui.le_mobile.setText(self.client.mobile)
             self.ui.le_mail.setText(self.client.email)
             self.ui.txe_notes.setPlainText(self.client.notes)
 
@@ -102,6 +103,7 @@ class FormClient(QDialog):
                 'adresse': self.ui.le_address.text(),
                 'email': self.ui.le_mail.text(),
                 'phone': self.ui.le_phone.text(),
+                'mobile': self.ui.le_mobile.text(),
                 'notes': self.ui.txe_notes.toPlainText()
             }
             

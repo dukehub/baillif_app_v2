@@ -16,17 +16,17 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QFrame,
-    QGridLayout, QGroupBox, QHBoxLayout, QHeaderView,
-    QLabel, QLineEdit, QPushButton, QSizePolicy,
-    QSpacerItem, QSpinBox, QSplitter, QTableView,
-    QVBoxLayout, QWidget)
+    QGroupBox, QHBoxLayout, QHeaderView, QLabel,
+    QLineEdit, QPushButton, QSizePolicy, QSpacerItem,
+    QSpinBox, QSplitter, QTableView, QVBoxLayout,
+    QWidget)
 import ui.resources_rc
 
 class Ui_page_clients(object):
     def setupUi(self, page_clients):
         if not page_clients.objectName():
             page_clients.setObjectName(u"page_clients")
-        page_clients.resize(1166, 753)
+        page_clients.resize(1061, 663)
         self.verticalLayout_3 = QVBoxLayout(page_clients)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.splitter = QSplitter(page_clients)
@@ -137,60 +137,15 @@ class Ui_page_clients(object):
 
         self.verticalLayout_2.addWidget(self.frame_2)
 
-        self.gb_infos = QGroupBox(self.frame)
-        self.gb_infos.setObjectName(u"gb_infos")
-        self.gb_infos.setEnabled(True)
-        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.gb_infos.sizePolicy().hasHeightForWidth())
-        self.gb_infos.setSizePolicy(sizePolicy3)
-        self.gb_infos.setMinimumSize(QSize(720, 0))
-        self.gb_infos.setFlat(False)
-        self.gridLayout = QGridLayout(self.gb_infos)
-        self.gridLayout.setSpacing(2)
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setContentsMargins(5, 5, 5, 5)
-        self.lbl_phone = QLabel(self.gb_infos)
-        self.lbl_phone.setObjectName(u"lbl_phone")
-
-        self.gridLayout.addWidget(self.lbl_phone, 7, 0, 1, 1)
-
-        self.lbl_full_name = QLabel(self.gb_infos)
-        self.lbl_full_name.setObjectName(u"lbl_full_name")
-
-        self.gridLayout.addWidget(self.lbl_full_name, 0, 2, 1, 1)
-
-        self.lbl_legal_status = QLabel(self.gb_infos)
-        self.lbl_legal_status.setObjectName(u"lbl_legal_status")
-
-        self.gridLayout.addWidget(self.lbl_legal_status, 0, 0, 1, 1)
-
-        self.lbl_mobile = QLabel(self.gb_infos)
-        self.lbl_mobile.setObjectName(u"lbl_mobile")
-
-        self.gridLayout.addWidget(self.lbl_mobile, 8, 0, 1, 1)
-
-        self.lbl_address = QLabel(self.gb_infos)
-        self.lbl_address.setObjectName(u"lbl_address")
-        self.lbl_address.setWordWrap(True)
-
-        self.gridLayout.addWidget(self.lbl_address, 6, 0, 1, 3)
-
-        self.lbl_email = QLabel(self.gb_infos)
-        self.lbl_email.setObjectName(u"lbl_email")
-
-        self.gridLayout.addWidget(self.lbl_email, 9, 0, 1, 1)
-
-        self.lbl_notes = QLabel(self.gb_infos)
-        self.lbl_notes.setObjectName(u"lbl_notes")
-
-        self.gridLayout.addWidget(self.lbl_notes, 7, 1, 3, 2)
-
-
-        self.verticalLayout_2.addWidget(self.gb_infos)
-
-        self.groupBox = QGroupBox(self.frame)
+        self.frame_4 = QFrame(self.frame)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_3 = QHBoxLayout(self.frame_4)
+        self.horizontalLayout_3.setSpacing(0)
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.groupBox = QGroupBox(self.frame_4)
         self.groupBox.setObjectName(u"groupBox")
         self.verticalLayout = QVBoxLayout(self.groupBox)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -248,7 +203,131 @@ class Ui_page_clients(object):
         self.verticalLayout.addWidget(self.frame_3)
 
 
-        self.verticalLayout_2.addWidget(self.groupBox)
+        self.horizontalLayout_3.addWidget(self.groupBox)
+
+        self.gb_infos = QGroupBox(self.frame_4)
+        self.gb_infos.setObjectName(u"gb_infos")
+        self.gb_infos.setEnabled(True)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.gb_infos.sizePolicy().hasHeightForWidth())
+        self.gb_infos.setSizePolicy(sizePolicy3)
+        self.gb_infos.setMinimumSize(QSize(300, 0))
+        self.gb_infos.setMaximumSize(QSize(300, 16777215))
+        self.gb_infos.setFlat(False)
+        self.verticalLayout_4 = QVBoxLayout(self.gb_infos)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.label = QLabel(self.gb_infos)
+        self.label.setObjectName(u"label")
+        font = QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setFrameShape(QFrame.Shape.NoFrame)
+
+        self.verticalLayout_4.addWidget(self.label)
+
+        self.lbl_legal_status = QLabel(self.gb_infos)
+        self.lbl_legal_status.setObjectName(u"lbl_legal_status")
+        font1 = QFont()
+        font1.setPointSize(12)
+        font1.setBold(True)
+        self.lbl_legal_status.setFont(font1)
+        self.lbl_legal_status.setFrameShape(QFrame.Shape.Box)
+
+        self.verticalLayout_4.addWidget(self.lbl_legal_status)
+
+        self.label_3 = QLabel(self.gb_infos)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setFont(font)
+        self.label_3.setFrameShape(QFrame.Shape.NoFrame)
+
+        self.verticalLayout_4.addWidget(self.label_3)
+
+        self.lbl_full_name = QLabel(self.gb_infos)
+        self.lbl_full_name.setObjectName(u"lbl_full_name")
+        self.lbl_full_name.setFont(font1)
+        self.lbl_full_name.setFrameShape(QFrame.Shape.Box)
+
+        self.verticalLayout_4.addWidget(self.lbl_full_name)
+
+        self.label_2 = QLabel(self.gb_infos)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setFont(font)
+        self.label_2.setFrameShape(QFrame.Shape.NoFrame)
+
+        self.verticalLayout_4.addWidget(self.label_2)
+
+        self.lbl_address = QLabel(self.gb_infos)
+        self.lbl_address.setObjectName(u"lbl_address")
+        self.lbl_address.setFont(font1)
+        self.lbl_address.setFrameShape(QFrame.Shape.Box)
+        self.lbl_address.setWordWrap(True)
+
+        self.verticalLayout_4.addWidget(self.lbl_address)
+
+        self.label_4 = QLabel(self.gb_infos)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font)
+
+        self.verticalLayout_4.addWidget(self.label_4)
+
+        self.lbl_phone = QLabel(self.gb_infos)
+        self.lbl_phone.setObjectName(u"lbl_phone")
+        self.lbl_phone.setFont(font1)
+        self.lbl_phone.setFrameShape(QFrame.Shape.Box)
+
+        self.verticalLayout_4.addWidget(self.lbl_phone)
+
+        self.label_5 = QLabel(self.gb_infos)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+
+        self.verticalLayout_4.addWidget(self.label_5)
+
+        self.lbl_mobile = QLabel(self.gb_infos)
+        self.lbl_mobile.setObjectName(u"lbl_mobile")
+        self.lbl_mobile.setFont(font1)
+        self.lbl_mobile.setFrameShape(QFrame.Shape.Box)
+
+        self.verticalLayout_4.addWidget(self.lbl_mobile)
+
+        self.label_6 = QLabel(self.gb_infos)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setFont(font)
+
+        self.verticalLayout_4.addWidget(self.label_6)
+
+        self.lbl_email = QLabel(self.gb_infos)
+        self.lbl_email.setObjectName(u"lbl_email")
+        self.lbl_email.setFont(font1)
+        self.lbl_email.setFrameShape(QFrame.Shape.Box)
+
+        self.verticalLayout_4.addWidget(self.lbl_email)
+
+        self.label_7 = QLabel(self.gb_infos)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setFont(font)
+
+        self.verticalLayout_4.addWidget(self.label_7)
+
+        self.lbl_notes = QLabel(self.gb_infos)
+        self.lbl_notes.setObjectName(u"lbl_notes")
+        self.lbl_notes.setFont(font1)
+        self.lbl_notes.setFrameShape(QFrame.Shape.Box)
+        self.lbl_notes.setWordWrap(True)
+
+        self.verticalLayout_4.addWidget(self.lbl_notes)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer)
+
+
+        self.horizontalLayout_3.addWidget(self.gb_infos)
+
+
+        self.verticalLayout_2.addWidget(self.frame_4)
 
         self.splitter.addWidget(self.frame)
 
@@ -266,17 +345,24 @@ class Ui_page_clients(object):
         self.pb_add.setText(QCoreApplication.translate("page_clients", u"\u0625\u0636\u0627\u0641\u0629 \u0639\u0645\u064a\u0644", None))
         self.pb_edit.setText("")
         self.pb_delete.setText("")
-        self.gb_infos.setTitle(QCoreApplication.translate("page_clients", u"\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644", None))
-        self.lbl_phone.setText("")
-        self.lbl_full_name.setText("")
-        self.lbl_legal_status.setText("")
-        self.lbl_mobile.setText("")
-        self.lbl_address.setText("")
-        self.lbl_email.setText("")
-        self.lbl_notes.setText("")
         self.groupBox.setTitle(QCoreApplication.translate("page_clients", u"\u0645\u062d\u0627\u0636\u0631 \u0627\u0644\u0639\u0645\u064a\u0644", None))
         self.le_find_dossiers.setPlaceholderText(QCoreApplication.translate("page_clients", u"\u0628\u062d\u062b...", None))
-        self.pushButton.setText(QCoreApplication.translate("page_clients", u"PushButton", None))
-        self.pushButton_2.setText(QCoreApplication.translate("page_clients", u"PushButton", None))
+        self.pushButton.setText(QCoreApplication.translate("page_clients", u"<<", None))
+        self.pushButton_2.setText(QCoreApplication.translate("page_clients", u">>", None))
+        self.gb_infos.setTitle(QCoreApplication.translate("page_clients", u"\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644", None))
+        self.label.setText(QCoreApplication.translate("page_clients", u"\u0627\u0644\u0635\u0641\u0629", None))
+        self.lbl_legal_status.setText("")
+        self.label_3.setText(QCoreApplication.translate("page_clients", u"\u0627\u0644\u0625\u0633\u0645 \u0648 \u0627\u0644\u0644\u0642\u0628", None))
+        self.lbl_full_name.setText("")
+        self.label_2.setText(QCoreApplication.translate("page_clients", u"\u0627\u0644\u0639\u0646\u0648\u0627\u0646", None))
+        self.lbl_address.setText("")
+        self.label_4.setText(QCoreApplication.translate("page_clients", u"\u0627\u0644\u0647\u0627\u062a\u0641", None))
+        self.lbl_phone.setText("")
+        self.label_5.setText(QCoreApplication.translate("page_clients", u"\u0627\u0644\u062c\u0648\u0627\u0644", None))
+        self.lbl_mobile.setText("")
+        self.label_6.setText(QCoreApplication.translate("page_clients", u"\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a", None))
+        self.lbl_email.setText("")
+        self.label_7.setText(QCoreApplication.translate("page_clients", u"\u0645\u0644\u0627\u062d\u0638\u0627\u062a", None))
+        self.lbl_notes.setText("")
     # retranslateUi
 

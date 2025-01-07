@@ -61,7 +61,7 @@ class ArchiveBox(Base):
     __tablename__ = 'archive_boxes'
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String(255), nullable=False)  # Nom de la boîte d'archive
+    name = Column(String(255), nullable=False, unique=True)  # Nom de la boîte d'archive est unique
     description = Column(Text, nullable=True)  # Description ou détails supplémentaires
     created_at = Column(DateTime, default=func.now(), nullable=False)  # Date de création
 

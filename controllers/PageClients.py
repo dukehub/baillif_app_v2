@@ -72,13 +72,13 @@ class PageClients(QWidget):
         """Affiche les informations du client dans les labels"""
         if client:
             # S'assurer d'utiliser les données les plus récentes
-            self.ui.lbl_legal_status.setText(f"<b>الصفة القانونية:</b> {client.genre or '-'}")
-            self.ui.lbl_full_name.setText(f"<b>الإسم و اللقب:</b> {client.nom or '-'}")
-            self.ui.lbl_address.setText(f"<b>العنوان:</b> {client.adresse or '-'}")
-            self.ui.lbl_phone.setText(f"<b>الهاتف:</b> {client.phone or '-'}")
-            self.ui.lbl_mobile.setText(f"<b>الجوال:</b> {client.mobile or '-'}")
-            self.ui.lbl_email.setText(f"<b>البريد الإلكتروني:</b> {client.email or '-'}")
-            self.ui.lbl_notes.setText(f"<b>ملاحظات:</b> {client.notes or '-'}")
+            self.ui.lbl_legal_status.setText(f"{client.genre or '-'}")
+            self.ui.lbl_full_name.setText(f"{client.nom or '-'}")
+            self.ui.lbl_address.setText(f"{client.adresse or '-'}")
+            self.ui.lbl_phone.setText(f"{client.phone or '-'}")
+            self.ui.lbl_mobile.setText(f" {client.mobile or '-'}")
+            self.ui.lbl_email.setText(f" {client.email or '-'}")
+            self.ui.lbl_notes.setText(f" {client.notes or '-'}")
             
             self.ui.gb_infos.setEnabled(True)
         else:

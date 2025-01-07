@@ -4144,3 +4144,1100 @@
 2025-01-06 10:48:02 - bailiff_app - INFO - Base de données initialisée avec succès
 2025-01-06 10:48:02 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
 2025-01-06 10:48:03 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 08:14:07 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 08:14:07 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 08:14:07 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-07 08:14:07 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 08:14:07 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 08:14:07 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 08:14:07 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 08:14:13 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 08:15:32 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 08:15:32 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 08:15:32 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-07 08:15:32 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 08:15:32 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 08:15:32 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 08:15:32 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 08:15:33 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 08:32:28 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 08:32:28 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 08:32:28 - bailiff_app - DEBUG - Répertoire templates existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\templates
+2025-01-07 08:32:28 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 08:32:28 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 08:32:28 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 08:32:28 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 08:32:29 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 08:59:34 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 08:59:34 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 08:59:34 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 08:59:34 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 08:59:34 - bailiff_app - ERROR - Erreur lors de l'initialisation de l'application: Textual SQL expression '\n        INSERT INTO cate...' should be explicitly declared as text('\n        INSERT INTO cate...')
+2025-01-07 09:09:04 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 09:09:04 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 09:09:04 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 09:09:04 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 09:09:04 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 09:09:04 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 09:09:08 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 09:12:27 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 09:12:27 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 09:12:27 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 09:12:27 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 09:12:27 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 09:12:27 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 09:12:28 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 09:12:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:12:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:12:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:12:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:12:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:12:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:12:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:12:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:01 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:17 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:17 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:17 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:17 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:22 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:23 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:23 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:23 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:23 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:25 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:42 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:42 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:49 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:49 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:49 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:49 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:13:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:13:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:17 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:17 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:17 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:17 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:21 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:21 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:21 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:21 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:22 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:22 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:22 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:22 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:23 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:23 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:23 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:23 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:24 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:24 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:24 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:24 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:27 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:29 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:29 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:29 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:29 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:32 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:34 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:41 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:41 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:41 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:42 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:42 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:50 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:50 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:50 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:50 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:54 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:14:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:14:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 09:15:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 09:15:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:42 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:42 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:42 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:44 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:47 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:47 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:47 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:47 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:53 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:53 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:53 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:53 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:56 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:56 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:59 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:59 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:15:59 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:15:59 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:00 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:00 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:03 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:03 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:05 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:05 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:05 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:05 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:10 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:10 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:10 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:10 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:13 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:13 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:13 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:13 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:16 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:32 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:32 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:32 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:32 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:34 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:34 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:34 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:34 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:36 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:36 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:36 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:36 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:39 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:43 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:43 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:47 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:47 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:47 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:47 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:48 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:48 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:49 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:49 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:49 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:49 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:57 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:16:58 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:03 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:04 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:04 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:05 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:05 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:05 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:05 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:06 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:06 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:08 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:08 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:08 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:08 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:24 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:24 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:24 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:24 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:24 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:24 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 09:17:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 09:17:30 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:30 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:36 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:36 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:36 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:36 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:36 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:36 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 09:17:38 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 09:17:38 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:17:38 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 09:17:38 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 09:17:38 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=1
+2025-01-07 09:18:48 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 09:18:48 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 09:18:48 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 09:18:48 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 09:18:48 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 09:18:48 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 09:18:48 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:11 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:19:15 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:28 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 09:21:28 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 09:21:28 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 09:21:28 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 09:21:28 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 09:21:28 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 09:21:29 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:33 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 09:21:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 09:21:45 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:45 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 09:21:45 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 09:21:45 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=1
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:21:51 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 09:22:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 09:22:14 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 09:22:14 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 09:22:14 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 09:22:15 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=2
+2025-01-07 10:14:00 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:14:00 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:14:00 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:14:00 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:14:00 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:14:00 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:14:01 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:07 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 10:14:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 10:14:18 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:18 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 10:14:18 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 10:14:18 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=3
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:35 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 10:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 10:14:55 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:14:55 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 10:14:55 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 10:14:55 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=3
+2025-01-07 10:17:05 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:17:05 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:17:05 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:17:05 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:17:05 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:17:05 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:17:06 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:17:38 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:17:38 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:17:38 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:17:38 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:17:38 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:17:38 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:17:39 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:17:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:17:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:17:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:17:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:17:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:17:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:36:53 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:36:53 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:36:53 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:36:53 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:36:53 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:36:53 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:36:53 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 10:38:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 10:39:15 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:39:15 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:39:15 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:39:15 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:39:15 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:39:15 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:39:16 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:42:26 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:42:26 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:42:26 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:42:26 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:42:26 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:42:26 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:42:27 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:44:08 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:44:08 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:44:08 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:44:08 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:44:09 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:44:09 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:44:09 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:54:44 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:54:44 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:54:44 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:54:44 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:54:44 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:54:44 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:54:45 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:57:26 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:57:26 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:57:26 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:57:26 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:57:26 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:57:26 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:57:27 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 10:59:26 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 10:59:26 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 10:59:26 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 10:59:26 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 10:59:26 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 10:59:26 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 10:59:27 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:00:00 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:00:00 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:00:00 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:00:00 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:00:00 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:00:00 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:00:01 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:00:55 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:00:55 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:00:55 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:00:55 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:00:55 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:00:55 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:00:55 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:02:13 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:02:13 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:02:13 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:02:13 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:02:13 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:02:13 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:02:14 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:03:22 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:03:22 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:03:22 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:03:22 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:03:22 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:03:22 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:03:22 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:04:18 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:04:18 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:04:18 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:04:18 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:04:19 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:04:19 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:04:19 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:05:39 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:05:39 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:05:39 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:05:39 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:05:39 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:05:39 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:05:40 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:06:50 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:06:50 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:06:50 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:06:50 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:06:50 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:06:50 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:06:50 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:07:53 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:07:53 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:07:53 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:07:53 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:07:53 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:07:53 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:07:54 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:10:41 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:10:41 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:10:41 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:10:41 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:10:41 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:10:41 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:10:42 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:11:29 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:11:29 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:11:29 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:11:29 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:11:29 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:11:29 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:11:30 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:11:52 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:11:52 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:11:52 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:11:52 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:11:52 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:11:52 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:11:53 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:12:38 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:12:38 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:12:38 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:12:38 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:12:38 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:12:38 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:12:38 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:13:12 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:17:55 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:17:55 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:17:55 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:17:55 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:17:55 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:17:55 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:17:56 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:02 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 11:18:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 11:18:20 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:20 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 11:18:20 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 11:18:20 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=3
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:31 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - DEBUG - EventManager: Émission de form_validation_complete
+2025-01-07 11:18:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour form_validation_complete
+2025-01-07 11:18:46 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:18:46 - bailiff_app - DEBUG - FormClient: 0 abonnés trouvés pour client_updated
+2025-01-07 11:18:46 - bailiff_app - DEBUG - DataManager: Début de la mise à jour du client
+2025-01-07 11:18:46 - bailiff_app - DEBUG - DataManager: Client mis à jour avec succès, ID=4
+2025-01-07 11:19:13 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:19:13 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:19:13 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:19:13 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:19:13 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:19:13 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:19:14 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:19:52 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:25 - bailiff_app - INFO - Démarrage de l'initialisation de l'application...
+2025-01-07 11:21:25 - bailiff_app - DEBUG - Répertoire archives existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\archives
+2025-01-07 11:21:25 - bailiff_app - DEBUG - Répertoire logs existe déjà: C:\Users\duke\CursorPrj\baillif_app_v2\logs
+2025-01-07 11:21:25 - bailiff_app - INFO - Tous les répertoires requis sont prêts
+2025-01-07 11:21:25 - bailiff_app - INFO - Base de données initialisée avec succès
+2025-01-07 11:21:25 - bailiff_app - INFO - Initialisation de l'application terminée avec succès
+2025-01-07 11:21:26 - bailiff_app - INFO - get_all_dossiers
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - DEBUG - EventManager: Émission de validation_state_changed
+2025-01-07 11:21:37 - bailiff_app - WARNING - EventManager: Aucun abonné pour validation_state_changed

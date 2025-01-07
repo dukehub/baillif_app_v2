@@ -21,16 +21,14 @@ DB_CONFIG_DEV = {
     'echo': False
 }
 
-# Configuration pour PostgreSQL en production
+# Configuration pour SQLite en production
 DB_CONFIG_PROD = {
-    'dbname': os.environ.get('DB_NAME'),
-    'user': os.environ.get('DB_USER'),
-    'password': os.environ.get('DB_PASSWORD'),
-    'host': os.environ.get('DB_HOST'),
+    'url': f'sqlite:///{os.path.join(basedir, "db_bailiff.db")}?charset=utf8',
+    'echo': False
 }
 
 # Basculter entre SQLite et PostgreSQL
-ENV = os.getenv('APP_ENV', 'dev')
+ENV = os.getenv('APP_ENV', 'prod')
 DB_CONFIG = DB_CONFIG_DEV if ENV == 'dev' else DB_CONFIG_PROD
 
 # Configuration de l'application

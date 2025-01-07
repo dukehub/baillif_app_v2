@@ -1,5 +1,5 @@
 import os
-from helpers.config import archive_dir, templates_dir, logs_dir
+from helpers.config import archive_dir, logs_dir, DB_CONFIG_PROD
 from helpers.logger import logger
 from core.db import init_db
 
@@ -9,7 +9,6 @@ def check_required_directories():
     """
     directories = {
         'archives': archive_dir,
-        'templates': templates_dir,
         'logs': logs_dir
     }
     
@@ -41,8 +40,10 @@ def initialize_app():
         logger.info("Tous les répertoires requis sont prêts")
         
         # Initialisation de la base de données
-        init_db()
-        logger.info("Base de données initialisée avec succès")
+        # vérification de la base de données existante
+        if not os.path.exists(DB_CONFIG_PROD['url']):
+            init_db()
+            logger.info("Base de données initialisée avec succès")
         
     except Exception as e:
         logger.error(f"Erreur lors de l'initialisation de l'application: {str(e)}")

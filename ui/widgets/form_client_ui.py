@@ -241,6 +241,7 @@ class Ui_form_client(object):
         self.label_3.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0639\u0646\u0648\u0627\u0646", None))
         self.label_4.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0647\u0627\u062a\u0641", None))
         self.error_phone.setText("")
+        self.le_phone.setInputMask(QCoreApplication.translate("form_client", u"999 99 99 99", None))
         self.label_5.setText(QCoreApplication.translate("form_client", u"\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a", None))
         self.error_mail.setText("")
         self.le_mail.setText("")
@@ -252,5 +253,6 @@ class Ui_form_client(object):
         self.pb_save.setText(QCoreApplication.translate("form_client", u"\u062d\u0641\u0638", None))
         self.error_address.setText("")
         self.error_mobile.setText("")
+        self.le_mobile.setInputMask(QCoreApplication.translate("form_client", u"9999 99 99 99", None))
     # retranslateUi
 

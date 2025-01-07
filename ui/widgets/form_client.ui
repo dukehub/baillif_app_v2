@@ -107,7 +107,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="le_phone"/>
+      <widget class="QLineEdit" name="le_phone">
+       <property name="inputMask">
+        <string>999 99 99 99</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -265,7 +269,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="le_mobile"/>
+      <widget class="QLineEdit" name="le_mobile">
+       <property name="inputMask">
+        <string>9999 99 99 99</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
