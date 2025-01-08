@@ -10,7 +10,7 @@ if __name__ == "__main__":
     initialize_app()
 
     app = QApplication(sys.argv)
-    app.setFont(QFont("Cairo", 12))
+    app.setFont(QFont("Cairo", 9))
     
     app.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
     app.setStyleSheet(open(css_file, 'r', encoding='utf-8').read())

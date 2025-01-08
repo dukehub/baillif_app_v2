@@ -1,7 +1,4 @@
-* {
-	font: 12pt ;
-	
-}
+
 QLineEdit {
     text-align: right; /* Aligne le texte à droite */
 	
@@ -9,35 +6,6 @@ QLineEdit {
 }
 
 
-/* Appliquer RTL à tous les QTextEdit */
-QTextEdit {
-    text-align: right; /* Aligne le texte à droite */
-    /* Définit la direction droite à gauche */
-}
-QTableView {
-    font-size: 12pt;
-}
-
-QTreeView {
-    font-size: 12pt;
-}
-
-/* Style spécifique pour le contenu des tables */
-QTableView::item {
-    font-size: 11pt;
-    padding: 2px;
-}
-
-QTreeView::item {
-    font-size: 11pt;
-    padding: 2px;
-}
-
-/* Style pour les en-têtes des tables */
-QHeaderView::section {
-    font-size: 12pt;
-    padding: 4px;
-}
 
 /*
 MainWindow Style

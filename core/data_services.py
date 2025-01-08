@@ -520,7 +520,13 @@ class BailiffServices:
     
     def create_bailiff(db, obj: Bailiff):
         bailiff = Bailiff(
-            nom=obj.nom
+            nom=obj.nom,
+            register_in=obj.register_in,
+            address=obj.address,
+            phone=obj.phone,
+            mobile=obj.mobile,
+            email=obj.email,
+            
         )
         db.add(bailiff)
         db.commit()

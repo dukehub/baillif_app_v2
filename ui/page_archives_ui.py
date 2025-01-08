@@ -17,9 +17,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtPdfWidgets import QPdfView
 from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QFrame,
-    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
-    QLineEdit, QSizePolicy, QSpacerItem, QSplitter,
-    QToolButton, QTreeView, QVBoxLayout, QWidget)
+    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
+    QSizePolicy, QSpacerItem, QSplitter, QToolButton,
+    QTreeView, QVBoxLayout, QWidget)
 import ui.resources_rc
 
 class Ui_page_archives(object):
@@ -100,7 +100,9 @@ class Ui_page_archives(object):
         self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.frame_3)
+        self.horizontalLayout_2.setSpacing(0)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.splitter = QSplitter(self.frame_3)
         self.splitter.setObjectName(u"splitter")
         self.splitter.setOrientation(Qt.Orientation.Horizontal)
@@ -116,21 +118,22 @@ class Ui_page_archives(object):
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout = QVBoxLayout(self.frame_2)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.gridLayout = QGridLayout()
-        self.gridLayout.setObjectName(u"gridLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.label = QLabel(self.frame_2)
         self.label.setObjectName(u"label")
 
-        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.horizontalLayout_3.addWidget(self.label)
 
         self.le_filter = QLineEdit(self.frame_2)
         self.le_filter.setObjectName(u"le_filter")
         self.le_filter.setClearButtonEnabled(True)
 
-        self.gridLayout.addWidget(self.le_filter, 0, 1, 1, 1)
+        self.horizontalLayout_3.addWidget(self.le_filter)
 
 
-        self.verticalLayout.addLayout(self.gridLayout)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
 
         self.tree_view_pdf = QTreeView(self.frame_2)
         self.tree_view_pdf.setObjectName(u"tree_view_pdf")

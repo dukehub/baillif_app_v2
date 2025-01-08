@@ -28,7 +28,7 @@ DB_CONFIG_PROD = {
 }
 
 # Basculter entre SQLite et PostgreSQL
-ENV = os.getenv('APP_ENV', 'prod')
+ENV = os.getenv('APP_ENV', 'dev')
 DB_CONFIG = DB_CONFIG_DEV if ENV == 'dev' else DB_CONFIG_PROD
 
 # Configuration de l'application
